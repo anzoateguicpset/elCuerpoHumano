@@ -125,3 +125,20 @@ h1, h2, h3, h4{
 #card3.correct { background: orange; }
 #card4.correct { background: yellow; }
 #card5.correct { background: green; }*/
+
+.parts__activities .backButton{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -92px;
+    text-decoration: none;
+    background: #bc7700;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+    .parts__activities .backButton:hover{
+        background: rgba(188, 119, 0, .5);
+    }

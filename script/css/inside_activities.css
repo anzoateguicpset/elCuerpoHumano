@@ -104,3 +104,20 @@
     color: #fff;
     transition: all 0.5s ease 0s;
 }
+
+.inside__activities .backButton{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -92px;
+    text-decoration: none;
+    background: #006857;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+    .inside__activities .backButton:hover{
+        background: rgba(0, 104, 87, .5);
+    }

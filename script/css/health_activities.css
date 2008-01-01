@@ -41,12 +41,28 @@
 }
 #boxbuttons .button {
 	text-transform: uppercase;
-	background: #EE872A;
+    background: #892a2e;
 	padding: 5px 10px;
 	margin: 5px;
 	border-radius: 10px;
 	cursor: pointer;
 }
 #boxbuttons .button:hover {
-	background: #999;
+	background: rgba(137, 42, 46, .5);
 }
+.health__activities .backButton{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -92px;
+	text-decoration: none;
+    background: #892a2e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+	padding: 5px 10px;
+    border-radius: 10px;
+}
+	.health__activities .backButton:hover{
+		background: rgba(137, 42, 46, .5);
+	}
