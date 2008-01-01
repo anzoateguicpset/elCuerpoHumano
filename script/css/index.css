@@ -7,16 +7,16 @@ a{
     color: #F10B0B;
 }
 
-#index__menu--1{}
-#index__menu--2{}
-#index__menu--3{}
+#menu__1{}
+#menu__2{}
+#menu__3{}
 
-.index__menu--parts{
+.menu--parts{
     background: url(../../imagenes/test.png) no-repeat;
 }
-.index__menu--inside{
+.menu--inside{
     background: url(../../imagenes/test.png) no-repeat;
 }
-.index__menu--health{
+.menu--health{
     background: url(../../imagenes/test.png) no-repeat;
 }
