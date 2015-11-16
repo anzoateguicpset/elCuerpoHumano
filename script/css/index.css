@@ -12,13 +12,6 @@ body {
     width: 900px;
     margin: 20px auto;
 }
-
-.impress-enabled .step {
-    margin: 0;
-}
-
-.impress-enabled .step.active { opacity: 1;border:none; }
-
 .slide {
     display: block;
     width: 300px;
@@ -30,16 +23,23 @@ body {
     font-size: 60px;
 }
 
-#overview { display: none }
-.impress-on-overview .step {
-    opacity: 1;
-    cursor: pointer;
-}
 .slide .circle{
     border-radius:80px;
     border: 10px solid #fff;
     width: 100px;
     padding: 30px 50px;
+}
+.impress-enabled .step {
+    margin: 0;
+}
+
+.impress-enabled .step.active { opacity: 1;border:none; }
+
+
+#overview { display: none }
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
 }
 .active span{
     background: blue;
