@@ -5,14 +5,33 @@
 	<title>El cuerpo humano</title>
 	<script src="../script/js/js.js"></script>
 	<script src="../script/js/jquery-2.1.4.js"></script>
-	<script src="../script/js/impress.js"></script>
 	<link rel="stylesheet" href="../script/css/stylesheet.css">
 	<meta name="viewport" content="width=1366, height=768 user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="Actividad digitalizada de aprendizaje - el cuerpo humano">
-	<meta name="author" content="Franklin Lugo / Madeleine Flores">
+	<meta name="author" content="Franklin Lugo">
 
 </head>
 <body class="index">
+
+	<div id="impress">
+		<div id="overview" class="step" data-x="-100" data-y="0" data-scale="1"></div>
+		            <div id="slide1" class="step slide" data-x="-100"  data-rotate-z="45" >
+		                <span class="circle">1</span>
+		                <p>Partes del CH</p>
+		            </div>
+
+		            <div id="slide2" class="step slide" data-x="-100" data-rotate-z="90" >
+		                <span class="circle">2</span>
+		                <p>CH por dentro</p>
+		            </div>
+
+		            <div id="slide3" class="step slide" data-x="-100"  data-rotate-z="135" >
+		                <span class="circle">3</span>
+		                <p>Salud y alimentancion</p>
+		            </div>
+	</div>
 	
+	<script src="../script/js/impress.js"></script>
+	<script>impress().init();</script>
 </body>
 </html>

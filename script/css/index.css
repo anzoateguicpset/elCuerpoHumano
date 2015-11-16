@@ -1,3 +1,63 @@
 .index{
 	background: #7B7B7B;
 }
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    background: #000;
+}
+
+.step {
+    position: relative;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.impress-enabled .step {
+    margin: 0;
+}
+
+.impress-enabled .step.active { opacity: 1;border:none; }
+
+.slide {
+    display: block;
+    width: 300px;
+    padding: 100px 200px;
+    height: 500px;
+    color:#fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60px;
+}
+
+#overview { display: none }
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+.slide .circle{
+    border-radius:80px;
+    border: 10px solid #fff;
+    width: 100px;
+    padding: 30px 50px;
+}
+.active span{
+    background: blue;
+}
+.active p{
+    display: block;
+    font-size: 60px;
+    margin: 175px 0 20px;
+}
+.future p{
+    display: none;
+}
+.past p{
+    display: none;
+}
+
+
+
+/**/
+
+
