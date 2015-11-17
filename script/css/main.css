@@ -1,0 +1,11 @@
+/* main stylesheet */
+@import url(index.css);
+@import url(impress.css);
+@import url(parts.css);
+@import url(inside.css);
+@import url(health.css);
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
