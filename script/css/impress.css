@@ -44,8 +44,7 @@
     opacity: 1;
     cursor: pointer;
 }
-.active span{
-}
+.active span{}
 .active p{
     position: relative;
     top: 450px;
@@ -54,9 +53,6 @@
     margin: 0;
     width: 90%;
     padding: 10px;
-}
-.active a p{
-    position: relative;
 }
 .future p{
     display: none;
