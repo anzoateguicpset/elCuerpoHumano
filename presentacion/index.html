@@ -39,19 +39,5 @@
 	
 	<script src="../script/js/impress.js"></script>
 	<script>impress().init();</script>
-	<script>
-			document.addEventListener("click", function ( event ) {
-			var target = event.target;
-			// find closest step element that is not active
-			while ( !(target.classList.contains("step") && !target.classList.
-			contains("active")) &&
-			(target !== document.documentElement) ) {
-			target = target.parentNode;
-			}
-			if ( api.goto(target) ) {
-			event.preventDefault();
-			}
-			}, false);
-	</script>
 </body>
 </html>
