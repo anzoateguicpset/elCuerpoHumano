@@ -1,0 +1,61 @@
+.step {
+    position: relative;
+    width: 300px;
+    height: 768px;
+    vertical-align: middle;
+    margin-top: 60px;
+}
+.slide {
+    display: block;
+    width: 300px;
+    height: 768px;
+    color:#fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 100px;
+}
+
+.slide .circle{
+    position: absolute;
+    left: 45px;
+    top: 50px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    padding: 50px 65px;
+}
+.impress-enabled .step {
+    margin: 0;
+    padding: 0;
+}
+    
+.impress-enabled .step.active{
+    opacity: 1;
+    border: none;
+}
+
+#overview { display: none }
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+.active span{
+    background: blue;
+}
+.active p{
+    position: relative;
+    top: 450px;
+    display: block;
+    font-size: 40px;
+    margin: 0;
+    width: 90%;
+    padding: 10px;
+}
+.future p{
+    display: none;
+}
+.past p{
+    display: none;
+}
+.active {
+    border: 1px solid blue;
+}
