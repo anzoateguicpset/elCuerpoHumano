@@ -1,3 +1,4 @@
+/* styles of menu library impress of index.html */
 .step {
     position: relative;
     width: 300px;
@@ -18,7 +19,6 @@
     font-size: 100px;
     z-index: 1;
 }
-
 .slide .circle{
     position: absolute;
     left: 5px;
@@ -38,9 +38,7 @@
     opacity: 1;
     border: none;
     z-index: 2;
-
 }
-
 #overview { display: none }
 .impress-on-overview .step {
     opacity: 1;

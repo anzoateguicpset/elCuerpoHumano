@@ -1,10 +1,10 @@
+/* styles of index.html */
 .index{
 	background: #7B7B7B;
 }
 a{
 	text-decoration: none;
     color: #F10B0B;
-	
 }
 
 #index__menu--1{}
@@ -16,7 +16,6 @@ a{
 }
 .index__menu--inside{
     background: url(../../imagenes/test.png) no-repeat;
-
 }
 .index__menu--health{
     background: url(../../imagenes/test.png) no-repeat;
