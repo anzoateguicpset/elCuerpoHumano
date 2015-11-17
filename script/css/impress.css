@@ -6,7 +6,6 @@
     vertical-align: middle;
     margin-top: 60px;
     z-index: 1;
-
 }
 .slide {
     position: relative;
@@ -33,13 +32,14 @@
     margin: 0;
     padding: 0;
 }
-    
 .impress-enabled .step.active{
     opacity: 1;
     border: none;
     z-index: 2;
 }
-#overview { display: none }
+#overview{
+    display: none
+}
 .impress-on-overview .step {
     opacity: 1;
     cursor: pointer;
