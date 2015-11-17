@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>El cuerpo humano</title>
 	<script src="../script/js/js.js"></script>
 	<script src="../script/js/jquery-2.1.4.js"></script>
 	<link rel="stylesheet" href="../script/css/stylesheet.css">
-	<meta name="viewport" content="width=1366, height=768 user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=1366, user-scalable=no">
 	<meta name="description" content="Actividad digitalizada de aprendizaje - el cuerpo humano">
 	<meta name="author" content="Franklin Lugo">
 
@@ -14,24 +14,38 @@
 <body class="index">
 
 	<div id="impress">
-		<div id="overview" class="step" data-x="-100" data-y="0" data-scale="1"></div>
-		            <div id="slide1" class="step slide" data-x="-100"  data-rotate-z="45" >
-		                <span class="circle">1</span>
-		                <p>Partes del CH</p>
-		            </div>
+		
+        <div id="index__menu--1" class="step slide" data-x="0" data-y="0" data-z="0" data-rotate-z="45" >
+            <span class="circle index__menu--parts">A</span>
+            <p>Partes del </br> Cuerpo Humano</p>
+        </div>
 
-		            <div id="slide2" class="step slide" data-x="-100" data-rotate-z="90" >
-		                <span class="circle">2</span>
-		                <p>CH por dentro</p>
-		            </div>
+        <div id="index__menu--2" class="step slide" data-x="0" data-y="120" data-z="0" data-rotate-z="90" >
+            <span class="circle index__menu--inside">B</span>
+            <p>Dentro del </br> Cuerpo Humano</p>
+        </div>
 
-		            <div id="slide3" class="step slide" data-x="-100"  data-rotate-z="135" >
-		                <span class="circle">3</span>
-		                <p>Salud y alimentancion</p>
-		            </div>
+        <div id="index__menu--3" class="step slide" data-x="0" data-y="230" data-z="0" data-rotate-z="135" >
+            <span class="circle index__menu--health">C</span>
+            <p>Salud y alimentación</p>
+        </div>
 	</div>
 	
 	<script src="../script/js/impress.js"></script>
 	<script>impress().init();</script>
+	<script>
+			document.addEventListener("click", function ( event ) {
+			var target = event.target;
+			// find closest step element that is not active
+			while ( !(target.classList.contains("step") && !target.classList.
+			contains("active")) &&
+			(target !== document.documentElement) ) {
+			target = target.parentNode;
+			}
+			if ( api.goto(target) ) {
+			event.preventDefault();
+			}
+			}, false);
+	</script>
 </body>
 </html>
