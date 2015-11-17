@@ -6,6 +6,13 @@
 #index__menu--2{}
 #index__menu--3{}
 
-.index__menu--parts{}
-.index__menu--inside{}
-.index__menu--health{}
+.index__menu--parts{
+    background: url(../../imagenes/test.png) repeat;
+}
+.index__menu--inside{
+    background: url(../../imagenes/test.png) repeat;
+
+}
+.index__menu--health{
+    background: url(../../imagenes/test.png) repeat;
+}

@@ -17,11 +17,13 @@
 
 .slide .circle{
     position: absolute;
-    left: 45px;
+    left: 5px;
     top: 50px;
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
     padding: 50px 65px;
+    width: 150px;
+    height: 150px;
 }
 .impress-enabled .step {
     margin: 0;
@@ -30,7 +32,8 @@
     
 .impress-enabled .step.active{
     opacity: 1;
-    border: none;
+    border: 1px solid blue;
+
 }
 
 #overview { display: none }
@@ -39,7 +42,6 @@
     cursor: pointer;
 }
 .active span{
-    background: blue;
 }
 .active p{
     position: relative;
@@ -55,7 +57,4 @@
 }
 .past p{
     display: none;
-}
-.active {
-    border: 1px solid blue;
 }
