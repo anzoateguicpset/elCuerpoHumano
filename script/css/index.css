@@ -1,6 +1,11 @@
 .index{
 	background: #7B7B7B;
 }
+a{
+	text-decoration: none;
+    color: #F10B0B;
+	
+}
 
 #index__menu--1{}
 #index__menu--2{}
