@@ -7,12 +7,12 @@
 #index__menu--3{}
 
 .index__menu--parts{
-    background: url(../../imagenes/test.png) repeat;
+    background: url(../../imagenes/test.png) no-repeat;
 }
 .index__menu--inside{
-    background: url(../../imagenes/test.png) repeat;
+    background: url(../../imagenes/test.png) no-repeat;
 
 }
 .index__menu--health{
-    background: url(../../imagenes/test.png) repeat;
+    background: url(../../imagenes/test.png) no-repeat;
 }
