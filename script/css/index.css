@@ -20,3 +20,13 @@ a{
 .menu--health{
     background: url(../../imagenes/test.png) no-repeat;
 }
+.menu__img1{
+	background: url(../../imagenes/600x600.png) no-repeat;
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 350px;
+	left: 200px;
+}
+.menu__img2{}
+.menu__img3{}
