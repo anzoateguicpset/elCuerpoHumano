@@ -1,6 +1,7 @@
 /* styles of index.html */
 .index{
 	background: #7B7B7B;
+	background: url(../../imagenes/background.png) no-repeat;
 }
 a{
 	text-decoration: none;
@@ -15,13 +16,13 @@ a{
 
 /* imagenes de cada Item del menu*/
 .menu__parts{
-    background: url(../../imagenes/test.png) no-repeat;
+    background: url(../../imagenes/menu__parts--img.png) no-repeat;
 }
 .menu__inside{
-    background: url(../../imagenes/test.png) no-repeat;
+    background: url(../../imagenes/menu__inside--img.png) no-repeat;
 }
 .menu__health{
-    background: url(../../imagenes/test.png) no-repeat;
+    background: url(../../imagenes/menu__health--img.png) no-repeat;
 }
 /* end - imagenes de cada Item del menu */
 
