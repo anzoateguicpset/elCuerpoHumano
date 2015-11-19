@@ -15,6 +15,7 @@
 
 	<div id="impress">
 		
+		<!-- Menu 2 - Dentro del Cuerpo Humano -->
         <div id="menu__2" onclick="FadeInMsg(this)" class="step slide" data-x="0" data-y="200" data-z="0" data-rotate-z="90" >
             <span class="circle menu--inside"></span>
 
@@ -22,7 +23,9 @@
 				<p>Dentro del </br> Cuerpo Humano</p>
 			</a>
         </div>
+        <!-- * end Menu 2 - Dentro del Cuerpo Humano * -->
 
+		<!-- Menu 1 - Partes del Cuerpo Humano -->
         <div id="menu__1" onclick="FadeInMsg(this)" class="step slide" data-x="0" data-y="0" data-z="0" data-rotate-z="45" >
             <span class="circle menu--parts"></span>
 
@@ -30,7 +33,9 @@
             	<p>Partes del </br> Cuerpo Humano</p>
             </a>
         </div>
+        <!-- * end Menu 1 - Partes del Cuerpo Humano * -->
 
+		<!-- Menu 3 - Salud y Alimentacion -->
         <div id="menu__3" onclick="FadeInMsg(this)" class="step slide" data-x="0" data-y="400" data-z="0" data-rotate-z="135" >
             <span class="circle menu--health"></span>
 
@@ -38,12 +43,16 @@
 				<p>Salud y alimentación</p>
 			</a>
         </div>
+        <!-- * end Menu 3 - Salud y Alimentacion * -->
 
-	</div>
+	</div> <!-- fin id impress -->
+
+	<!-- si son necesarias para anadir imagenes adicionales al menu -->
 	<span class="menu__img1 hidden"></span>
 	<span class="menu__img2"></span>
 	<span class="menu__img3"></span>
 
+	<!-- Arranque del script de impress -->
 	<script src="../script/js/impress.js"></script>
 	<script>impress().init();</script>
 </body>

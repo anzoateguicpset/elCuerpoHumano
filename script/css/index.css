@@ -12,6 +12,8 @@ a{
 #menu__2{}
 #menu__3{}
 
+
+/* imagenes de cada Item del menu*/
 .menu--parts{
     background: url(../../imagenes/test.png) no-repeat;
 }
@@ -21,6 +23,9 @@ a{
 .menu--health{
     background: url(../../imagenes/test.png) no-repeat;
 }
+/* end - imagenes de cada Item del menu */
+
+
 /* en caso tal que necesite agregar imagenes adicionales a la portada*/
 .menu__img1{
 	background: url(../../imagenes/600x600.png) no-repeat;
