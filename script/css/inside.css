@@ -1,1 +1,9 @@
 /* stylesheet inside.html */
+.inside{
+	background: url(../../imagenes/background.png) no-repeat;
+}
+.inside__list{}
+.inside__list--item{}
+.inside__list--item:nth-child(2){
+	margin: 0 1em;
+}

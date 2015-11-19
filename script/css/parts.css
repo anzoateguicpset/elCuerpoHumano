@@ -1,1 +1,9 @@
 /* stylesheet parts.html */
+.parts{
+	background: url(../../imagenes/background.png) no-repeat;
+}
+.parts__list{}
+.parts__list--item{}
+.parts__list--item:nth-child(2){
+	margin: 0 1em;
+}

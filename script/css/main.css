@@ -8,7 +8,52 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
+a{}
+/* Hidden class */
 .hidden{
 	display: none
 }
+/* Styles menu */
+.list{
+	list-style: none;
+	margin: 1.2em 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+/* Styles menu item */
+.listItem{
+	border: 1px solid red;
+	display: inline;
+	padding: 1em;
+}
+.listItem:hover{}
+/*
+ *
+ * the same style for the bottom menu
+ *
+ */
+.listBottom{
+	position: absolute;
+	bottom: 0;
+	
+	margin: 0 0 1.2em 0;
+	padding: 0;
+
+	list-style: none;
+
+	width: 100%;
+	text-align: center;
+
+}
+/* Styles menu item */
+.listBottomItem{
+	border: 1px solid red;
+	display: inline;
+	padding: 1em;
+}
+.listBottomItem:nth-child(1){
+	margin-right: 1em;
+}
+.listBottomItem:hover{}

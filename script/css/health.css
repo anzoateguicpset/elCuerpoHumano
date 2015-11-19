@@ -1,1 +1,9 @@
 /* stylesheet health.html */
+.health{
+	background: url(../../imagenes/background.png) no-repeat;
+}
+.health__list{}
+.health__list--item{}
+.health__list--item:nth-child(1){
+	margin-right: 1em;
+}
