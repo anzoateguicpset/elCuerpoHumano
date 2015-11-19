@@ -14,13 +14,13 @@ a{
 
 
 /* imagenes de cada Item del menu*/
-.menu--parts{
+.menu__parts{
     background: url(../../imagenes/test.png) no-repeat;
 }
-.menu--inside{
+.menu__inside{
     background: url(../../imagenes/test.png) no-repeat;
 }
-.menu--health{
+.menu__health{
     background: url(../../imagenes/test.png) no-repeat;
 }
 /* end - imagenes de cada Item del menu */
