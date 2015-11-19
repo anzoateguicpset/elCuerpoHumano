@@ -1,4 +1,4 @@
-// funcion que toma el parrafo del menu
+// funcion que aplica fadeIn al mensaje de cada item del menu
 function FadeInMsg(object) {
 	// var foo = jQuery(objeto).find("p").text();
 	var foo = jQuery("p", object).text();

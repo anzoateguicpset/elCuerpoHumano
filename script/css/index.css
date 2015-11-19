@@ -7,6 +7,7 @@ a{
     color: #F10B0B;
 }
 
+/* id de los menus usados por impress js */
 #menu__1{}
 #menu__2{}
 #menu__3{}
@@ -20,6 +21,7 @@ a{
 .menu--health{
     background: url(../../imagenes/test.png) no-repeat;
 }
+/* en caso tal que necesite agregar imagenes adicionales a la portada*/
 .menu__img1{
 	background: url(../../imagenes/600x600.png) no-repeat;
 	width: 600px;
