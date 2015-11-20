@@ -40,7 +40,6 @@ h2{
 .listItem:hover{
 	border: 2px solid green;
 }
-
 /*
  * Styles bottom menu
  */
@@ -77,4 +76,9 @@ h2{
 }
 .listBottomItem:hover{
 	border: 1px solid green;
+}
+.divSection{
+	width: 60%;
+	margin: 0 auto;
+	text-align: justify;
 }

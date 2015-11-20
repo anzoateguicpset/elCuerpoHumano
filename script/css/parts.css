@@ -7,3 +7,7 @@
 .parts__list--item:nth-child(2){
 	margin: 10px 1em;
 }
+.parts__section--main{
+	text-align: center;
+	margin-top: 3em;
+}
