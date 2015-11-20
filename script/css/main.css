@@ -11,6 +11,9 @@ body {
     font-size: 16px;
 }
 a{}
+h2{
+	text-align: center;
+}
 /* Hidden class */
 .hidden{
 	display: none
@@ -18,27 +21,35 @@ a{}
 /* Styles menu */
 .list{
 	list-style: none;
-	margin: 1.2em 0 0 0;
-	padding: 0;
+	margin-top: 0;
+	padding: .2em;
 	text-align: center;
+	background: black;
+	height: 3em;
+	border: 1px solid green;
 }
 /* Styles menu item */
 .listItem{
 	border: 1px solid red;
 	display: inline;
 	padding: 1em;
+	height: 3em;
+	color: blue;
+	line-height: 3em;
 }
-.listItem:hover{}
+.listItem:hover{
+	border: 2px solid green;
+}
+
 /*
- *
- * the same style for the bottom menu
- *
+ * Styles bottom menu
  */
 .listBottom{
 	position: absolute;
 	bottom: 0;
 	
-	margin: 0 0 1.2em 0;
+	/*margin: 0 0 1.2em 0;*/
+	margin-bottom: 0;
 	padding: 0;
 
 	list-style: none;
@@ -46,14 +57,24 @@ a{}
 	width: 100%;
 	text-align: center;
 
+	height: 3em;
+	padding: .2em;
+	background: black;
+	border: 1px solid green;
+	height: 3em;
+
 }
-/* Styles menu item */
+/* Styles bottom menu item */
 .listBottomItem{
 	border: 1px solid red;
 	display: inline;
 	padding: 1em;
+	color: blue;
+	line-height: 3em;
 }
 .listBottomItem:nth-child(1){
 	margin-right: 1em;
 }
-.listBottomItem:hover{}
+.listBottomItem:hover{
+	border: 1px solid green;
+}
