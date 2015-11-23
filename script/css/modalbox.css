@@ -1,0 +1,68 @@
+/*
+
+	la clase modalMask aplica el fondo oscuro el fondo oscuro, mediante la superposición de un div que se extienda 
+	sobre el contenido. En el interior de este div se incluye la ventana, a la que se le aplican otras 2 clases, 
+	una para darle estilo y otra para animarla. Dentro incluiremos otro enlace para crear el botón de
+	cerrar y el contenido que mostrara la ventana.
+
+*/
+
+.modalmask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+} 
+.modalmaskActive {
+	opacity:1;
+	pointer-events: auto;
+}
+
+
+/* Estilos de la ventana */
+.modalbox{
+	width: 400px;
+	position: absolute;
+	top: 150px;
+	left: 20%;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+	border-radius:3px;
+	-webkit-transition: all 500ms ease-in;
+	-moz-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
+}
+/* Estilos para animar aparicion y desaparicion */
+.movedown {
+	margin: 0 auto;
+}
+.rotate {
+	margin: 10% auto;
+	-webkit-transform: scale(-5,-5); 
+	transform: scale(-5,-5);
+}
+.resize {
+	margin: 10% auto;
+	width:0;
+	height:0;
+}
+.modalmaskActive .movedown{		
+	margin-top: 100px;
+	/*margin:10% auto;*/
+}
+.modalmaskActive .rotate{		
+	transform: rotate(360deg) scale(1,1);
+    -webkit-transform: rotate(360deg) scale(1,1);
+}
+.modalmaskActive .resize{
+	width:100%;
+	height:100%;
+}

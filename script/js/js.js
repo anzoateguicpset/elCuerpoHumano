@@ -4,6 +4,17 @@ function FadeInMsg(object) {
 	// jQuery(object).find("p").fadeIn(1000);
 	jQuery("p", object).fadeIn(1000);
 }
+
+function openBoxModel(){
+	console.log("dentro de la funcion foo");
+	// jQuery("#modalmask--js").toggleClass("modalmask").toggleClass("modalmaskActive");
+	jQuery("#modalmask--js").addClass("modalmaskActive");
+}
+
+function closeBoxModel(){
+	jQuery("#modalmask--js").removeClass("modalmaskActive");
+}
+
 jQuery(document).ready(function(){
 
 	/* Parts.html */
@@ -70,7 +81,7 @@ jQuery(document).ready(function(){
 	/*fin inside.html*/
 
 	/*health.html*/
-	
+
 	/*fin health.html*/
 
 

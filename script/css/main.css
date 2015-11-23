@@ -4,6 +4,7 @@
 @import url(parts.css);
 @import url(inside.css);
 @import url(health.css);
+@import url(modalbox.css);
 body {
     font-family: sans-serif;
     margin: 0;
