@@ -122,4 +122,28 @@ jQuery(document).ready(function(){
 	/*fin health.html*/
 
 
+	/*Orientaciones*/
+	// ninos
+	jQuery("#orientaciones__list--itemNinos").mouseenter(function(){
+		jQuery("#orientaciones__section_itemNinos").fadeToggle("fast");
+		})
+	jQuery("#orientaciones__list--itemNinos").mouseleave(function(){
+		jQuery("#orientaciones__section_itemNinos").fadeToggle("fast");
+	})
+	// pedagogicas
+	jQuery("#orientaciones__list--itemPedag").mouseenter(function(){
+		jQuery("#orientaciones__section_itemPedag").fadeToggle("fast");
+		})
+	jQuery("#orientaciones__list--itemPedag").mouseleave(function(){
+		jQuery("#orientaciones__section_itemPedag").fadeToggle("fast");
+	})
+	// Familia
+	jQuery("#orientaciones__list--itemFamilia").mouseenter(function(){
+		jQuery("#orientaciones__section_itemFamilia").fadeToggle("fast");
+		})
+	jQuery("#orientaciones__list--itemFamilia").mouseleave(function(){
+		jQuery("#orientaciones__section_itemFamilia").fadeToggle("fast");
+	})
+	/*Fin Orientaciones*/
+
 });

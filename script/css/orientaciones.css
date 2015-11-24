@@ -2,3 +2,6 @@
 .orientaciones{
 	background: url(../../imagenes/background.png) no-repeat;
 }
+.orientaciones__list--item:nth-child(2){
+	margin: 0 1em;
+}
