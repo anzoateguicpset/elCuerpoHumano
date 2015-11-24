@@ -30,6 +30,14 @@ function closeBoxModel3(){
 	jQuery("#modalmask--js3").removeClass("modalmaskActive");
 }
 
+function openBoxModel4(){
+	jQuery("#modalmask--js4").addClass("modalmaskActive");
+}
+
+function closeBoxModel4(){
+	jQuery("#modalmask--js4").removeClass("modalmaskActive");
+}
+
 
 jQuery(document).ready(function(){
 
@@ -104,14 +112,12 @@ jQuery(document).ready(function(){
 		jQuery("#health__section--itemMain").hide();
 		jQuery("#health__section--itemAlimentacion").hide();
 		})
-	jQuery("#health__list--itemSalud").mouseleave(function(){
-		jQuery("#health__section--itemMain").fadeToggle("fast");
-		jQuery("#health__section--itemSalud").fadeToggle("fast");
-	})
 	// Alimentacion
 	jQuery("#health__list--itemAlimentacion").mouseenter(function(){
 		jQuery("#health__section--itemMain").fadeOut("fast");
 		jQuery("#health__section--itemAlimentacion").fadeIn("fast");
+		jQuery("#health__section--itemMain").fadeOut("fast");
+		jQuery("#health__section--itemSalud").fadeOut("fast");
 		})
 	/*fin health.html*/
 
