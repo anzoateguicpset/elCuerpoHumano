@@ -36,8 +36,10 @@ jQuery(document).ready(function(){
 	/* Parts.html */
 	// cabeza
 	jQuery("#parts__list--itemCabeza").mouseenter(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
+		// jQuery("#parts__section--itemMain").fadeToggle("fast");
 		jQuery("#parts__section--itemCabeza").fadeToggle("fast");
+		jQuery("#parts__section--itemMain").fadeOut("fast");
+		jQuery("#parts__section--itemExtre").fadeOut("fast");
 		})
 	jQuery("#parts__list--itemCabeza").mouseleave(function(){
 		jQuery("#parts__section--itemMain").fadeToggle("fast");
@@ -48,6 +50,8 @@ jQuery(document).ready(function(){
 	jQuery("#parts__list--itemTronco").mouseenter(function(){
 		jQuery("#parts__section--itemMain").fadeToggle("fast");
 		jQuery("#parts__section--itemTronco").fadeToggle("fast");
+		jQuery("#parts__section--itemMain").fadeOut("fast");
+		jQuery("#parts__section--itemExtre").fadeOut("fast");
 		})
 	jQuery("#parts__list--itemTronco").mouseleave(function(){
 		jQuery("#parts__section--itemMain").fadeToggle("fast");
@@ -56,12 +60,8 @@ jQuery(document).ready(function(){
 
 	// Extremidades
 	jQuery("#parts__list--itemExtre").mouseenter(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
-		jQuery("#parts__section--itemExtre").fadeToggle("fast");
-		})
-	jQuery("#parts__list--itemExtre").mouseleave(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
-		jQuery("#parts__section--itemExtre").fadeToggle("fast");
+		jQuery("#parts__section--itemMain").fadeOut("fast");
+		jQuery("#parts__section--itemExtre").fadeIn("fast");
 		})
 	/* Fin Parts.html*/
 	

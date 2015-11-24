@@ -19,7 +19,6 @@
 	/*border-radius: 50%;*/
 }
 .health__imgSabiasQ:nth-child(2) img{
-	border: 1px solid blue;
 	margin: 0 3em;
 }
 .health__imgSabiasQ img:hover{
