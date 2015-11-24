@@ -5,15 +5,31 @@ function FadeInMsg(object) {
 	jQuery("p", object).fadeIn(1000);
 }
 
-function openBoxModel(){
-	console.log("dentro de la funcion foo");
-	// jQuery("#modalmask--js").toggleClass("modalmask").toggleClass("modalmaskActive");
-	jQuery("#modalmask--js").addClass("modalmaskActive");
+/* mejorar esto a una sola funcion*/
+function openBoxModel1(){
+	jQuery("#modalmask--js1").addClass("modalmaskActive");
 }
 
-function closeBoxModel(){
-	jQuery("#modalmask--js").removeClass("modalmaskActive");
+function closeBoxModel1(){
+	jQuery("#modalmask--js1").removeClass("modalmaskActive");
 }
+
+function openBoxModel2(){
+	jQuery("#modalmask--js2").addClass("modalmaskActive");
+}
+
+function closeBoxModel2(){
+	jQuery("#modalmask--js2").removeClass("modalmaskActive");
+}
+
+function openBoxModel3(){
+	jQuery("#modalmask--js3").addClass("modalmaskActive");
+}
+
+function closeBoxModel3(){
+	jQuery("#modalmask--js3").removeClass("modalmaskActive");
+}
+
 
 jQuery(document).ready(function(){
 
@@ -81,7 +97,22 @@ jQuery(document).ready(function(){
 	/*fin inside.html*/
 
 	/*health.html*/
-
+	// Salud
+	jQuery("#health__list--itemSalud").mouseenter(function(){
+		jQuery("#health__section--itemMain").fadeToggle("fast");
+		jQuery("#health__section--itemSalud").fadeToggle("fast");
+		jQuery("#health__section--itemMain").hide();
+		jQuery("#health__section--itemAlimentacion").hide();
+		})
+	jQuery("#health__list--itemSalud").mouseleave(function(){
+		jQuery("#health__section--itemMain").fadeToggle("fast");
+		jQuery("#health__section--itemSalud").fadeToggle("fast");
+	})
+	// Alimentacion
+	jQuery("#health__list--itemAlimentacion").mouseenter(function(){
+		jQuery("#health__section--itemMain").fadeOut("fast");
+		jQuery("#health__section--itemAlimentacion").fadeIn("fast");
+		})
 	/*fin health.html*/
 
 
