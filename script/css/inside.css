@@ -1,5 +1,6 @@
 /* stylesheet inside.html */
-.inside{
+.inside,
+.inside__activities{
 	background: url(../../imagenes/background.png) no-repeat;
 }
 .inside__list{}

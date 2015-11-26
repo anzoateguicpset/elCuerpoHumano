@@ -1,5 +1,6 @@
 /* stylesheet health.html */
-.health{
+.health,
+.health__activities{
 	background: url(../../imagenes/background.png) no-repeat;
 }
 .health__list{}

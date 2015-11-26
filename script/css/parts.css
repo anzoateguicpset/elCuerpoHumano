@@ -1,5 +1,6 @@
 /* stylesheet parts.html */
-.parts{
+.parts,
+.parts__activities{
 	background: url(../../imagenes/background.png) no-repeat;
 }
 .parts__list{}
