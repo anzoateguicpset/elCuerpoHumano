@@ -1,9 +1,8 @@
 /*
 
-	la clase modalMask aplica el fondo oscuro el fondo oscuro, mediante la superposición de un div que se extienda 
+	la clase modalMask aplica el fondo oscuro, mediante la superposición de un div que se extienda 
 	sobre el contenido. En el interior de este div se incluye la ventana, a la que se le aplican otras 2 clases, 
-	una para darle estilo y otra para animarla. Dentro incluiremos otro enlace para crear el botón de
-	cerrar y el contenido que mostrara la ventana.
+	una para darle estilo y otra para animarla. Dentro incluiremos otro enlace para  el contenido que mostrara la ventana.
 
 */
 

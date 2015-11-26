@@ -44,7 +44,6 @@ jQuery(document).ready(function(){
 	/* Parts.html */
 	// cabeza
 	jQuery("#parts__list--itemCabeza").mouseenter(function(){
-		// jQuery("#parts__section--itemMain").fadeToggle("fast");
 		jQuery("#parts__section--itemCabeza").fadeToggle("fast");
 		jQuery("#parts__section--itemMain").fadeOut("fast");
 		jQuery("#parts__section--itemExtre").fadeOut("fast");
