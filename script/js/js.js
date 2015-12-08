@@ -37,8 +37,6 @@ function openBoxModel4(){
 function closeBoxModel4(){
 	jQuery("#modalmask--js4").removeClass("modalmaskActive");
 }
-
-
 jQuery(document).ready(function(){
 
 	/* Parts.html */
@@ -146,3 +144,6 @@ jQuery(document).ready(function(){
 	/*Fin Orientaciones*/
 
 });
+
+
+
