@@ -12,11 +12,7 @@
     display: block;
     width: 300px;
     height: 768px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 100px;
     z-index: 1;
-    border: 1px solid red;
 }
 .slide .circle{
     position: absolute;
@@ -44,7 +40,7 @@
     cursor: pointer;
 }
 .active span{
-    
+
 }
 .active p{
     position: relative;
