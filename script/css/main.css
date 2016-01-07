@@ -6,6 +6,7 @@
 @import url(health.css);
 @import url(modalbox.css);
 @import url(orientaciones.css);
+@import url(parts_activities.css);
 body {
     font-family: sans-serif;
     margin: 0;
