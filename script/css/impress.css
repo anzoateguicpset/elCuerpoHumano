@@ -12,21 +12,20 @@
     display: block;
     width: 300px;
     height: 768px;
-    /*color:#fff;*/
     text-align: center;
     vertical-align: middle;
     font-size: 100px;
     z-index: 1;
+    border: 1px solid red;
 }
 .slide .circle{
     position: absolute;
     left: 5px;
     top: 50px;
     border-radius: 50%;
-    /*border: 5px solid #fff;*/
-    padding: 50px 65px;
-    width: 150px;
-    height: 150px;
+    padding: 65px;
+    width: 200px;
+    height: 200px;
 }
 .impress-enabled .step {
     margin: 0;
@@ -44,7 +43,9 @@
     opacity: 1;
     cursor: pointer;
 }
-.active span{}
+.active span{
+    
+}
 .active p{
     position: relative;
     top: 450px;

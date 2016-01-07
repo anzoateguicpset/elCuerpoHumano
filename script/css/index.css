@@ -15,26 +15,22 @@ a{
 
 /* circulos de cada Item del menu*/
 .menu__parts{
-    /*background: url(../../imagenes/menu__parts--img.png) no-repeat;*/
     background: #d99118;
     color: #e1cb99;
-    font-size: .35em;
+    font-size: 0.35em;
     font-weight: bold;
 }
 .menu__inside{
-    /*background: url(../../imagenes/menu__inside--img.png) no-repeat;*/
     background: #3e9283;
     color: #dfce9a;
-    font-size: .35em;
+    font-size: 0.30em;
     font-weight: bold;
 }
 .menu__health{
-    /*background: url(../../imagenes/menu__health--img.png) no-repeat;*/
     background: #dc696e;
     color: #e1cd98;
-    font-size: .35em;
+    font-size: 0.30em;
     font-weight: bold;
-    text-align: left;
 }
 /* end - circulos de cada Item del menu */
 
