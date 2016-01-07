@@ -14,13 +14,13 @@ function init(){
 
 
 	// create the pile of shuffled cards
-	var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	var numbers = [1, 2, 3, 4, 5];
 	numbers.sort(function(){
 		return Math.random() - .5
 	});
 
 
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < 5; i++) {
 		$('<div>' +numbers[i]+'</div>').data('number', numbers[i]).attr('id','card'+numbers[i]).appendTo('#cardPile').draggable({
 			containment: '#content',
 			stack: '#cardPile div',
@@ -31,8 +31,8 @@ function init(){
 
 
 	// create the card slots
-	var words = ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez'];
-	for (var i = 1; i <= 10  ; i++) {
+	var words = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
+	for (var i = 1; i <= 5  ; i++) {
 		$('<div>'+words[i-1]+'</div>').data('number', i).appendTo('#cardSlots').droppable({
 			accept: '#cardPile div',
 			hoverClass: 'hovered',
@@ -77,7 +77,7 @@ function handleCardDrop(event, ui){
 
 	*/
 
-	if(correctCards == 10){
+	if(correctCards == 5){
 		$('#successMessage').show();
 		$('#successMessage').animate({
 			left: '380px',
