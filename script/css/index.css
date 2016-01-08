@@ -16,38 +16,36 @@ a{
 /* circulos de cada Item del menu*/
 .menu__parts{
     background: #d99118;
-
 }
-.menu__parts--text{
-    color: #e1cb99;
-    font-size: 2.2em;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
+    .menu__parts--text{
+        color: #e1cb99;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
 
-}
 .menu__inside{
     background: #3e9283;
-    margin-top: -50px;
 }
-.menu__inside--text{
-    color: #dfce9a;
-    font-size: 2.2em;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-}
+    .menu__inside--text{
+        color: #dfce9a;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
 .menu__health{
     background: #dc696e;
 }
-.menu__health--text{
-    color: #e1cd98;
-    font-size: 2.2em;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-left: -45px;
-    text-align: center;
-}
+    .menu__health--text{
+        color: #e1cd98;
+        font-size: 2.2em;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: -45px;
+        text-align: center;
+    }
 /* end - circulos de cada Item del menu */
 
 

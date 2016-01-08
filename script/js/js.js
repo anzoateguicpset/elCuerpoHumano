@@ -1,8 +1,10 @@
 // funcion que aplica fadeIn al mensaje de cada item del menu
 function FadeInMsg(object) {
 	jQuery("p").hide();
+	jQuery(".foo").hide();
 	// jQuery(object).find("p").fadeIn(1000);
 	jQuery("p", object).fadeIn(1000);
+	jQuery(".foo", object).fadeIn(1000);
 }
 
 /* mejorar esto a una sola funcion*/

@@ -1,12 +1,12 @@
 /* styles of menu library impress of index.html */
+
 .step {
     position: relative;
     width: 300px;
     height: 768px;
-    vertical-align: middle;
-    margin-top: 60px;
     z-index: 1;
 }
+/* estilos para los slides que no estan activos */
 .slide {
     position: relative;
     display: block;
@@ -14,10 +14,10 @@
     height: 768px;
     z-index: 1;
 }
-.slide .circle{
+
+/* Estilo aplicados a todos los circulos, esten activos o no */
+.circle{
     position: absolute;
-    left: 5px;
-    top: 50px;
     border-radius: 50%;
     padding: 65px;
     width: 200px;
@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
 }
+/* cuando el slide esta activo */
 .impress-enabled .step.active{
     opacity: 1;
     border: none;
@@ -39,9 +40,7 @@
     opacity: 1;
     cursor: pointer;
 }
-.active span{
-
-}
+.active span{}
 .active p{
     position: relative;
     top: 450px;
