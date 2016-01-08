@@ -8,6 +8,21 @@ function FadeInMsg(object) {
 	jQuery(".content", object).fadeIn(1000);
 }
 
+function changeBackground(object){
+	console.log("entro a la funcion changeBackground");
+	var r = jQuery(object).attr("id");
+	if (r == "menu__1"){
+		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu1.png)');
+	}
+	if (r == "menu__2"){
+		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu2.png)');
+	}
+	if (r == "menu__3"){
+		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu3.png)');
+	}
+	console.log(r);
+}
+
 /* mejorar esto a una sola funcion*/
 function openBoxModel1(){
 	jQuery("#modalmask--js1").addClass("modalmaskActive");
