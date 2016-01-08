@@ -24,6 +24,12 @@ a{
         margin-top: 20px;
         text-align: center;
     }
+    .menu__parts--content{
+        border: 1px solid red;
+        position: relative;
+        right: 300px;
+        top: 300px;
+    }
 
 .menu__inside{
     background: #3e9283;
@@ -35,6 +41,20 @@ a{
         margin-top: 20px;
         text-align: center;
     }
+    .menu__inside--content{
+        border: 1px solid red;
+        position: relative;
+        top: 300px;
+    }
+    .menu__inside--img{
+        position: absolute;
+        height: 333px;
+        width: 621px;
+        top: 350px;
+        left: -150px;
+    }
+
+
 .menu__health{
     background: #dc696e;
 }
@@ -45,6 +65,12 @@ a{
         margin-top: 30px;
         margin-left: -45px;
         text-align: center;
+    }
+    .menu__health--content{
+        border: 1px solid red;
+        position: relative;
+        top: 300px;
+        left: 300px;
     }
 /* end - circulos de cada Item del menu */
 
