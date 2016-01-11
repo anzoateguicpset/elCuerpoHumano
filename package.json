@@ -1,0 +1,23 @@
+{
+  "name": "el_cuerpo_humano",
+  "version": "1.0.0",
+  "description": "Actividad Digitalizada de Aprendizaje \"El Cuerpo Humano\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftwareEducativo/elCuerpoHumano.git"
+  },
+  "author": "Franklin Lugo / CPSET Anzoategui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoftwareEducativo/elCuerpoHumano/issues"
+  },
+  "homepage": "https://github.com/SoftwareEducativo/elCuerpoHumano#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1"
+  }
+}
