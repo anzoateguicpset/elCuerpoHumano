@@ -1,4 +1,4 @@
-# elCuerpoHumano
+# El Cuerpo Humano
 Actividad Digitalizada de Aprendizaje "El cuerpo humano"
 
 Programador: Franklin Lugo.
