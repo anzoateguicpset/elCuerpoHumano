@@ -1,11 +1,11 @@
 // funcion que aplica fadeIn al mensaje de cada item del menu
 function FadeInMsg(object) {
 	jQuery("p").hide();
-	jQuery(".content").hide();
+	jQuery(".content-js").hide();
 	jQuery(".menu__inside--img").addClass("hidden");
 	// jQuery(object).find("p").fadeIn(1000);
 	jQuery("p", object).fadeIn(1000);
-	jQuery(".content", object).fadeIn(1000);
+	jQuery(".content-js", object).fadeIn(1000);
 }
 
 function changeBackground(object){

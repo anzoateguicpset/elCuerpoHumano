@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var connect = require('gulp-connect');
 
 /* array con los archivos que seran modificados*/
-var files = ['paginas/*.html', 'presentacion/index.html', 'actividades/*.html', 'script/**/.+(js|css)'];
+var files = ['paginas/*.html', 'presentacion/index.html', 'actividades/*.html', 'script/**/*.+(js|css)'];
 
 gulp.task( 'files', function(){
 	gulp.src(files).pipe(connect.reload());

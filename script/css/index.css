@@ -17,6 +17,7 @@ a{
 .menu__parts{
     background: #d99118;
 }
+    /* texto dentro del circulo cuerpo humano */
     .menu__parts--text{
         color: #e1cb99;
         font-size: 2.2em;
@@ -24,16 +25,57 @@ a{
         margin-top: 20px;
         text-align: center;
     }
+    /* Div del contenido del slide cuerpo humano*/
     .menu__parts--content{
-        border: 1px solid red;
         position: relative;
-        right: 300px;
-        top: 300px;
+        right: 500px;
+        top: 350px;
+        height: 500px;
+        width: 750px;
+        margin-bottom: 600px;
     }
+        /* imagen menu partes del cuerpo humano */
+        .menu__parts--content--img{
+            position: absolute;
+            top: -350px;
+            right: 430px;
+        }
+        /* ul de los circulos dentro del menu */
+        .menu__parts--content--ul{
+            list-style: none;
+            margin-left: -35px;     
+        }    
+            /* circulos dentro del menu partes del cuerpo humano*/
+            .menu__parts--content--ulli{
+                display: table;
+                background: #bc7700;
+                border-radius: 50%;
+                font-size: 2em;
+                padding: 1em;
+                width: 50px;
+                height: 50px;
+                overflow-y: hidden;
+                position: relative;
+            }   
+                /* circulo del centro */
+                .menu__parts--content--ulli:nth-child(2){
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+                /* texto circulos menu partes del cuerpo humano*/
+                .menu__parts--content--ulli--text{
+                    color: #ffffff;
+                    position: absolute;
+                    top: 40%;
+                    left: 55%;
+                    font-weight: bold;
+                    font-size: 1em;
+                }
 
 .menu__inside{
     background: #3e9283;
 }
+    /* texto dentro del circulo */
     .menu__inside--text{
         color: #dfce9a;
         font-size: 2.2em;
@@ -41,23 +83,25 @@ a{
         margin-top: 20px;
         text-align: center;
     }
+    /* Div del contenido del slide */
     .menu__inside--content{
         border: 1px solid red;
         position: relative;
         top: 300px;
     }
-    .menu__inside--img{
-        position: absolute;
-        height: 333px;
-        width: 621px;
-        top: 350px;
-        left: -150px;
-    }
+        .menu__inside--img{
+            position: absolute;
+            height: 333px;
+            width: 621px;
+            top: 350px;
+            left: -150px;
+        }
 
 
 .menu__health{
     background: #dc696e;
 }
+    /* texto dentro del circulo */
     .menu__health--text{
         color: #e1cd98;
         font-size: 2.2em;
@@ -66,6 +110,7 @@ a{
         margin-left: -45px;
         text-align: center;
     }
+    /* Div del contenido del slide */
     .menu__health--content{
         border: 1px solid red;
         position: relative;

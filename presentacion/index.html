@@ -15,11 +15,17 @@
 
 	<div id="impress">
 		
+		<!-- 
+		*la clase content-js, se usa con js para mantener oculto el div de los slides no acivos.
+
+		*la clase hidden, se usa para mantener oculto todo  el contenido cuando sale la img ppal
+		 -->
+
 		<!-- Menu 2 - Dentro del Cuerpo Humano -->
         <div id="menu__2" onclick="FadeInMsg(this); changeBackground(this);" class="step slide" data-x="0" data-y="250" data-z="0" data-rotate-z="90" >
             <span class="circle menu__inside"><div class="menu__inside--text">DENTRO DEL CUERPO HUMANO</div></span>
 
-			<div class="content menu__inside--content hidden">
+			<div class="content-js menu__inside--content hidden">
 				<ul>
 					<li>MÚSCULOS</li>
 					<li>ESQUELETO</li>
@@ -39,12 +45,16 @@
             <span class="circle menu__parts"><div class="menu__parts--text">PARTES DEL CUERPO HUMANO</div></span>
 
             
-            <div class="content menu__parts--content hidden">
-            	<ul>
-            		<li>CABEZA</li>
-            		<li>TRONCO</li>
-            		<li>EXTREMIDADES</li>
+            <div class="content-js menu__parts--content hidden">
+            	<ul class="menu__parts--content--ul">
+            		<li class="menu__parts--content--ulli">&nbsp;<div class="menu__parts--content--ulli--text">CABEZA</div></li>
+            		<li class="menu__parts--content--ulli">&nbsp;<div class="menu__parts--content--ulli--text">TRONCO</div></li>
+            		<li class="menu__parts--content--ulli">&nbsp;<div class="menu__parts--content--ulli--text">EXTREMIDADES</div></li>
             	</ul>
+
+            	<figure class="menu__parts--content--img">
+            		<img src="../imagenes/logo-peq.png" alt="img div">
+            	</figure>
             </div>
 
         </div>
@@ -56,7 +66,7 @@
             	<div class="menu__health--text">SALUD </br>Y</br> ALIMENTACIÓN</div>
             </span>
 
-			<div class="content menu__health--content hidden">
+			<div class="content-js menu__health--content hidden">
 				<ul>
 					<li>SALUD</li>
 					<li>ALIMENTACIÓN</li>
@@ -67,11 +77,6 @@
         <!-- * end Menu 3 - Salud y Alimentacion * -->
 
 	</div> <!-- fin id impress -->
-
-	<!-- si son necesarias para anadir imagenes adicionales al menu -->
-	<span class="menu__img1"></span>
-	<span class="menu__img2"></span>
-	<span class="menu__img3"></span>
 
 	<!-- Arranque del script de impress -->
 	<script src="../script/js/impress.js"></script>
