@@ -42,7 +42,7 @@ a{
         .menu__parts--content--img{
             position: absolute;
             top: -350px;
-            right: 430px;
+            right: -550px;
         }
         /* ul de los circulos dentro del menu */
         .menu__parts--content--ul{
@@ -178,7 +178,7 @@ a{
         .menu__health--content--img{
             position: absolute;
             top: -300px;
-            right: -50px;
+            left: -900px;
         }
         /* ul de los circulos dentro del menu */
         .menu__health--content--ul{

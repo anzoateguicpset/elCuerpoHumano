@@ -10,9 +10,10 @@
 .slide {
     position: relative;
     display: block;
-    width: 300px;
+    width: 220px;
     height: 768px;
     z-index: 1;
+
 }
 
 /* Estilo aplicados a todos los circulos, esten activos o no */
