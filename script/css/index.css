@@ -88,6 +88,13 @@ a{
         margin-top: 20px;
         text-align: center;
     }
+    .menu__inside--img{
+        position: absolute;
+        height: 333px;
+        width: 621px;
+        top: 350px;
+        left: -150px;
+    }
     /* Div del contenido del slide dentro del cuerpo humano*/
     .menu__inside--content{
         position: relative;
