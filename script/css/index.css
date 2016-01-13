@@ -23,7 +23,7 @@ a{
     /* texto dentro del circulo partes del cuerpo humano */
     .menu__parts--text{
         color: #e1cb99;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bold;
         margin-top: 15px;
         text-align: center;
@@ -84,7 +84,7 @@ a{
     /* texto dentro del circulo dentro de cuerpo humano */
     .menu__inside--text{
         color: #dfce9a;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bold;
         margin-top: 15px;
         text-align: center;
@@ -156,10 +156,10 @@ a{
     /* texto dentro del circulo salud y alimentacion */
     .menu__health--text{
         color: #e1cd98;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bold;
         margin-top: 20px;
-        margin-left: -59px;
+        margin-left: -35px;
         text-align: center;
         line-height: 0.9;
 
