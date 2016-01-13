@@ -15,7 +15,10 @@ gulp.task('watch', function(){
 });
 
 gulp.task('connect', function(){
-	connect.server({livereload: true});
+	connect.server({
+		port: 8080,
+		livereload: true 
+	});
 });
 
 /* Tarea default */

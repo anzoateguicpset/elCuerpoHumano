@@ -28,11 +28,10 @@ a{
     /* Div del contenido del slide cuerpo humano*/
     .menu__parts--content{
         position: relative;
-        right: 600px;
-        top: 350px;
+        right: 500px;
+        top: 300px;
         height: 500px;
         width: 750px;
-        margin-bottom: 600px;
     }
         /* imagen menu partes del cuerpo humano */
         .menu__parts--content--img{
