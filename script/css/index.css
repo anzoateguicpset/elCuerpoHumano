@@ -25,7 +25,8 @@ a{
         color: #e1cb99;
         font-size: 1.5em;
         font-weight: bold;
-        margin-top: 15px;
+        margin-top: 5px;
+        margin-left: -15px;
         text-align: center;
         line-height: 0.9;
     }
@@ -86,7 +87,8 @@ a{
         color: #dfce9a;
         font-size: 1.5em;
         font-weight: bold;
-        margin-top: 15px;
+        margin-top: 5px;
+        margin-left: -15px;
         text-align: center;
         line-height: 0.9;
 
@@ -158,8 +160,8 @@ a{
         color: #e1cd98;
         font-size: 1.5em;
         font-weight: bold;
-        margin-top: 20px;
-        margin-left: -35px;
+        margin-top: 15px;
+        margin-left: -55px;
         text-align: center;
         line-height: 0.9;
 
