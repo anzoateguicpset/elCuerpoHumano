@@ -14,10 +14,13 @@ a{
 
 
 /* circulos de cada Item del menu*/
+/* 
+    menu 1 - Partes del cuerpo humano
+ */
 .menu__parts{
     background: #d99118;
 }
-    /* texto dentro del circulo cuerpo humano */
+    /* texto dentro del circulo partes del cuerpo humano */
     .menu__parts--text{
         color: #e1cb99;
         font-size: 2.2em;
@@ -25,7 +28,7 @@ a{
         margin-top: 20px;
         text-align: center;
     }
-    /* Div del contenido del slide cuerpo humano*/
+    /* Div del contenido del slide partes del cuerpo humano*/
     .menu__parts--content{
         position: relative;
         right: 500px;
@@ -61,20 +64,23 @@ a{
                     margin-top: 1em;
                     margin-bottom: 1em;
                 }
-                /* texto circulos menu partes del cuerpo humano*/
-                .menu__parts--content--ulli--text{
-                    color: #ffffff;
-                    position: absolute;
-                    top: 40%;
-                    left: 55%;
-                    font-weight: bold;
-                    font-size: 1em;
-                }
+            /* texto circulos menu partes del cuerpo humano*/
+            .menu__parts--content--ulli--text{
+                color: #ffffff;
+                position: absolute;
+                top: 40%;
+                left: 55%;
+                font-weight: bold;
+                font-size: 1em;
+            }
 
+/* 
+    menu 2 - Dentro del cuerpo humano
+ */
 .menu__inside{
     background: #3e9283;
 }
-    /* texto dentro del circulo */
+    /* texto dentro del circulo dentro de cuerpo humano */
     .menu__inside--text{
         color: #dfce9a;
         font-size: 2.2em;
@@ -82,25 +88,62 @@ a{
         margin-top: 20px;
         text-align: center;
     }
-    /* Div del contenido del slide */
+    /* Div del contenido del slide dentro del cuerpo humano*/
     .menu__inside--content{
-        border: 1px solid red;
         position: relative;
-        top: 300px;
+        top: 380px;
+        right: 240px;
+        width: 750px;
+        height: 350px;
     }
-        .menu__inside--img{
+        /* imagen menu dentro del cuerpo humano */
+        .menu__inside--content--img{
             position: absolute;
-            height: 333px;
-            width: 621px;
-            top: 350px;
-            left: -150px;
+            top: 170px;
+            right: -350px;
         }
+        /* ul de los circulos dentro del menu */
+        .menu__inside--content--ul{
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            bottom: 10px;
+            width: 94.5%;
+            text-align: center;
+        }
+            /* circulos dentro del menu partes del cuerpo humano*/
+            .menu__inside--content--ulli{
+                display: inline-block;
+                background: #006857;
+                border-radius: 50%;
+                font-size: 2em;
+                padding: 1em;
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }   
+                /* circulo del centro */
+                .menu__inside--content--ulli:nth-child(2){
+                    margin: 0 4em;
+                }
+            /* texto circulos menu dentro del cuerpo humano*/
+            .menu__inside--content--ulli--text{
+                color: #ffffff;
+                position: absolute;
+                top: 40%;
+                left: -40%;
+                font-weight: bold;
+                font-size: 1em;
+            }
 
 
+/* 
+    menu 3 - Salud y alimentacion
+ */
 .menu__health{
     background: #dc696e;
 }
-    /* texto dentro del circulo */
+    /* texto dentro del circulo salud y alimentacion */
     .menu__health--text{
         color: #e1cd98;
         font-size: 2.2em;
@@ -109,13 +152,61 @@ a{
         margin-left: -45px;
         text-align: center;
     }
-    /* Div del contenido del slide */
+    /* Div del contenido del slide salud y alimentacion */
     .menu__health--content{
-        border: 1px solid red;
         position: relative;
         top: 300px;
         left: 300px;
+        width: 500px;
+        height: 400px;
     }
+        /* imagen menu salud y alimentacion */
+        .menu__health--content--img{
+            position: absolute;
+            top: -300px;
+            right: -50px;
+        }
+        /* ul de los circulos dentro del menu */
+        .menu__health--content--ul{
+            position: absolute;
+            list-style: none;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            height: 99.5%;
+        }
+            /* circulos dentro del menu salud y alimentacion*/
+            .menu__health--content--ulli{
+                display: block;
+                background: #892a2e;
+                border-radius: 50%;
+                font-size: 2em;
+                padding: 1em;
+                width: 50px;
+                height: 50px;
+                position: relative;
+            }
+                /* Primer circulo */
+                .menu__health--content--ulli:nth-child(1){
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+            /* texto circulos menu salud y alimentacion*/
+            .menu__health--content--ulli--text{
+                position: absolute;
+                color: #ffffff;
+                top: 40%;
+                left: -60%;
+                font-weight: bold;
+                font-size: 1em;
+                text-align: left;
+            }
+            /* esta clase es para el texto del segundo circulo
+            para darle un margen independiente 
+             */
+            .mhculli--text2{
+                left: -190%;
+            }
 /* end - circulos de cada Item del menu */
 
 

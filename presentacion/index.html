@@ -19,18 +19,25 @@
 		*la clase content-js, se usa con js para mantener oculto el div de los slides no acivos.
 
 		*la clase hidden, se usa para mantener oculto todo  el contenido cuando sale la img ppal
+		
+		*El menu 2 esta de primero para que salga en el centro cuando se abra junto con la imagen principal
 		 -->
 
+		
 		<!-- Menu 2 - Dentro del Cuerpo Humano -->
         <div id="menu__2" onclick="FadeInMsg(this); changeBackground(this);" class="step slide" data-x="0" data-y="250" data-z="0" data-rotate-z="90" >
             <span class="circle menu__inside"><div class="menu__inside--text">DENTRO DEL CUERPO HUMANO</div></span>
 
 			<div class="content-js menu__inside--content hidden">
-				<ul>
-					<li>MÚSCULOS</li>
-					<li>ESQUELETO</li>
-					<li>CUIDADOS</li>
+				<ul class="menu__inside--content--ul">
+					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">MUSCULOS</div></li>
+					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">ESQUELETO</div></li>
+					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">CUIDADOS</div></li>
 				</ul>
+
+				<figure class="menu__inside--content--img">
+					<img src="../imagenes/logo-peq.png" alt="img div">
+				</figure>
 			</div>
 
 			<figure>
@@ -67,10 +74,13 @@
             </span>
 
 			<div class="content-js menu__health--content hidden">
-				<ul>
-					<li>SALUD</li>
-					<li>ALIMENTACIÓN</li>
+				<ul class="menu__health--content--ul">
+					<li class="menu__health--content--ulli">&nbsp;<div class="menu__health--content--ulli--text">SALUD</div></li>
+					<li class="menu__health--content--ulli">&nbsp;<div class="menu__health--content--ulli--text mhculli--text2">ALIMENTACIÓN</div></li>
 				</ul>
+				<figure class="menu__health--content--img">
+					<img src="../imagenes/logo-peq.png" alt="img div">
+				</figure>
 			</div>
 
         </div>
