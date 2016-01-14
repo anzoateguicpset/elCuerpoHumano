@@ -1,9 +1,15 @@
-// funcion que aplica fadeIn al mensaje de cada item del menu
+/*
+	*Funcion que muestra cada div con el contenido y oculta el resto
+	*La clase .content-js se usa para ocultar todos los div 
+	*La clase .menu__inside--img pertenece a la img principal cuando se abre la pagina
+	
+	*Para buscar las etiquetas p dentro del objeto p, se puede hacer de la siguiente manera:
+	jQuery(object).find("p").fadeIn(1000);
+	En la funcion se usa una forma mas corta
+*/
 function FadeInMsg(object) {
-	jQuery("p").hide();
 	jQuery(".content-js").hide();
 	jQuery(".menu__inside--img").addClass("hidden");
-	// jQuery(object).find("p").fadeIn(1000);
 	jQuery("p", object).fadeIn(1000);
 	jQuery(".content-js", object).fadeIn(1000);
 }
@@ -11,6 +17,7 @@ function FadeInMsg(object) {
 function changeBackground(object){
 	console.log("entro a la funcion changeBackground");
 	var r = jQuery(object).attr("id");
+	console.log(r);
 	if (r == "menu__1"){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu1.png)');
 	}
@@ -20,7 +27,6 @@ function changeBackground(object){
 	if (r == "menu__3"){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu3.png)');
 	}
-	console.log(r);
 }
 
 /* mejorar esto a una sola funcion*/
@@ -89,33 +95,39 @@ jQuery(document).ready(function(){
 	/* Fin Parts.html*/
 	
 
-	/*inside.html*/
+	/* dentro del cuerpo humano */
 	//musculos
-	jQuery("#inside__list--itemMusculos").mouseenter(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemMusculos").fadeToggle("fast");
+	jQuery("#inside__list--itemMusculos-js").mouseenter(function(){
+		console.log("entro al id #inside__list--itemMusculos-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemMusculos-js").fadeToggle("fast");
 		})
-	jQuery("#inside__list--itemMusculos").mouseleave(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemMusculos").fadeToggle("fast");
+	jQuery("#inside__list--itemMusculos-js").mouseleave(function(){
+		console.log("salio al id #inside__list--itemMusculos-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemMusculos-js").fadeToggle("fast");
 	})
 	//Esqueleto
-	jQuery("#inside__list--itemEsqueleto").mouseenter(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemEsqueleto").fadeToggle("fast");
+	jQuery("#inside__list--itemEsqueleto-js").mouseenter(function(){
+		console.log("entro al id #inside__list--itemEsqueleto-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemEsqueleto-js").fadeToggle("fast");
 		})
-	jQuery("#inside__list--itemEsqueleto").mouseleave(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemEsqueleto").fadeToggle("fast");
+	jQuery("#inside__list--itemEsqueleto-js").mouseleave(function(){
+		console.log("salio al id #inside__list--itemEsqueleto-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemEsqueleto-js").fadeToggle("fast");
 	})
 	//cuidados
-	jQuery("#inside__list--itemCuidado").mouseenter(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemCuidados").fadeToggle("fast");
+	jQuery("#inside__list--itemCuidados-js").mouseenter(function(){
+		console.log("entro al id #inside__list--itemCuidados-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemCuidados-js").fadeToggle("fast");
 		})
-	jQuery("#inside__list--itemCuidado").mouseleave(function(){
-		jQuery("#inside__section--itemMain").fadeToggle("fast");
-		jQuery("#inside__section--itemCuidados").fadeToggle("fast");
+	jQuery("#inside__list--itemCuidados-js").mouseleave(function(){
+		console.log("salio al id #inside__list--itemCuidados-js");
+		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
+		jQuery("#inside__section--itemCuidados-js").fadeToggle("fast");
 	})
 	/*fin inside.html*/
 

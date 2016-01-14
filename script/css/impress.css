@@ -41,7 +41,10 @@
     opacity: 1;
     cursor: pointer;
 }
-.active span{}
+
+/* estas clases creo que no las necesitares mas */
+
+/*.active span{}
 .active p{
     position: relative;
     top: 450px;
@@ -57,3 +60,4 @@
 .past p{
     display: none;
 }
+*/

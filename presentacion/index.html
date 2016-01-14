@@ -16,11 +16,9 @@
 	<div id="impress">
 		
 		<!-- 
-		*la clase content-js, se usa con js para mantener oculto el div de los slides no acivos.
-
-		*la clase hidden, se usa para mantener oculto todo  el contenido cuando sale la img ppal
-		
-		*El menu 2 esta de primero para que salga en el centro cuando se abra junto con la imagen principal
+			*la clase .content-js, se usa con js para mantener oculto el div de los slides no acivos.
+			*la clase .hidden, se usa para mantener oculto todo  el contenido cuando sale la img ppal
+			*El menu 2 esta de primero para que salga en el centro cuando se abra la pagina
 		 -->
 
 		
@@ -30,16 +28,48 @@
 
 			<div class="content-js menu__inside--content hidden">
 				<ul class="menu__inside--content--ul">
-					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">MÚSCULOS</div></li>
-					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">ESQUELETO</div></li>
-					<li class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">CUIDADOS</div></li>
+					<li id="inside__list--itemMusculos-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">MÚSCULOS</div></li>
+					<li id="inside__list--itemEsqueleto-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">ESQUELETO</div></li>
+					<li id="inside__list--itemCuidados-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">CUIDADOS</div></li>
 				</ul>
 
 				<figure class="menu__inside--content--img">
 					<img src="../imagenes/logo-peq.png" alt="img div">
 				</figure>
-			</div>
 
+			<!--  -->
+			<section>
+				<div class="inside__section" id="inside__section--itemMain-js">
+					<p>
+						El cuerpo humano tiene estructuras que le dan forma, le permiten moverse y cambiar de posición; Estas estructuras son  los músculos y los huesos.
+					</p>
+				</div>
+				<div class="inside__section hidden" id="inside__section--itemMusculos-js">
+					<h2>Los músculos</h2>
+					<p>
+						Se encuentran debajo de la piel, son los que nos permiten correr, saltar, reír, sujetar un objeto o lanzarlo. Los músculos son elásticos, es decir, que pueden estirarse y encogerse sin romperse
+					</p>
+				</div>
+				<div class="inside__section hidden" id="inside__section--itemEsqueleto-js">
+					<h2>El esqueleto</h2>
+					<p>
+						Se encuentra debajo de los músculos, está formado por huesos, que son piezas blancas y duras, su función es dar soporte a nuestro cuerpo y proteger los organos como el corazón, los pulmones y el estómago.
+					</p>
+				</div>
+				<div class="inside__section hidden" id="inside__section--itemCuidados-js">
+					<p>
+						Para cuidar los músculos y el esqueleto debes:
+						<ul>
+							<li>Consumir alimentos como leche, pescado, carne, frutas y vegetales frescos</li>
+							<li>Evitar situaciones como correr por la escaleras y saltar desde sitios altos</li>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<!--  -->
+
+			</div>
+			
 			<figure>
 				<img src="../imagenes/logo-ppal.png" alt="imagen principal" class="menu__inside--img">
 			</figure>
