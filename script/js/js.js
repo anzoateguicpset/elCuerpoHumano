@@ -131,20 +131,20 @@ jQuery(document).ready(function(){
 	})
 	/*fin inside.html*/
 
-	/*health.html*/
+	/* Salud y Alimentacion */
 	// Salud
-	jQuery("#health__list--itemSalud").mouseenter(function(){
-		jQuery("#health__section--itemMain").fadeToggle("fast");
-		jQuery("#health__section--itemSalud").fadeToggle("fast");
-		jQuery("#health__section--itemMain").hide();
-		jQuery("#health__section--itemAlimentacion").hide();
+	jQuery("#health__list--itemSalud-js").mouseenter(function(){
+		console.log("entro a #health__list--itemSalud-js");
+		jQuery("#health__section--itemSalud-js").fadeIn("fast");
+		jQuery("#health__section--itemMain-js").hide();
+		jQuery("#health__section--itemAlimentacion-js").hide();
 		})
 	// Alimentacion
-	jQuery("#health__list--itemAlimentacion").mouseenter(function(){
-		jQuery("#health__section--itemMain").fadeOut("fast");
-		jQuery("#health__section--itemAlimentacion").fadeIn("fast");
-		jQuery("#health__section--itemMain").fadeOut("fast");
-		jQuery("#health__section--itemSalud").fadeOut("fast");
+	jQuery("#health__list--itemAlimentacion-js").mouseenter(function(){
+		console.log("entro a  #health__list--itemAlimentacion-js");
+		jQuery("#health__section--itemAlimentacion-js").fadeIn("fast");
+		jQuery("#health__section--itemMain-js").fadeOut("fast");
+		jQuery("#health__section--itemSalud-js").fadeOut("fast");
 		})
 	/*fin health.html*/
 

@@ -171,17 +171,16 @@ a{
     /* Div del contenido del slide salud y alimentacion */
     .menu__health--content{
         position: relative;
-        top: 300px;
-        left: 280px;
-        width: 500px;
-        height: 450px;
-        border: 1px solid red;
+        top: 240px;
+        left: -520px;
+        width: 1300px;
+        height: 510px;
     }
         /* imagen menu salud y alimentacion */
         .menu__health--content--img{
             position: absolute;
-            top: -330px;
-            left: -920px;
+            top: -280px;
+            left: -70px;
         }
         /* ul de los circulos dentro del menu */
         .menu__health--content--ul{
