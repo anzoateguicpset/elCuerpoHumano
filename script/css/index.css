@@ -36,7 +36,7 @@ a{
         right: 550px;
         top: 250px;
         height: 500px;
-        width: 750px;
+        width: 1100px;
         border: 1px solid red;
 
     }
@@ -44,7 +44,7 @@ a{
         .menu__parts--content--img{
             position: absolute;
             top: -280px;
-            right: -600px;
+            right: -250px;
         }
         /* ul de los circulos dentro del menu */
         .menu__parts--content--ul{

@@ -65,32 +65,41 @@ jQuery(document).ready(function(){
 
 	/* Parts.html */
 	// cabeza
-	jQuery("#parts__list--itemCabeza").mouseenter(function(){
-		jQuery("#parts__section--itemCabeza").fadeToggle("fast");
-		jQuery("#parts__section--itemMain").fadeOut("fast");
-		jQuery("#parts__section--itemExtre").fadeOut("fast");
+	jQuery("#parts__list--itemCabeza-js").mouseenter(function(){
+		console.log("entro a #parts__list--itemCabeza-js");
+		jQuery("#parts__section--itemMain-js").fadeOut("fast");
+		jQuery("#parts__section--itemCabeza-js").fadeIn("fast");
+		// para cerrar el contenido de extremidades si esta abierto
+		jQuery("#parts__section--itemExtre-js").fadeOut("fast");
 		})
-	jQuery("#parts__list--itemCabeza").mouseleave(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
-		jQuery("#parts__section--itemCabeza").fadeToggle("fast");
+	jQuery("#parts__list--itemCabeza-js").mouseleave(function(){
+		console.log("salio de #parts__list--itemCabeza-js");
+		jQuery("#parts__section--itemMain-js").fadeIn("fast");
+		jQuery("#parts__section--itemCabeza-js").fadeOut("fast");
 	})
 
 	// Tronco
-	jQuery("#parts__list--itemTronco").mouseenter(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
-		jQuery("#parts__section--itemTronco").fadeToggle("fast");
-		jQuery("#parts__section--itemMain").fadeOut("fast");
-		jQuery("#parts__section--itemExtre").fadeOut("fast");
+	jQuery("#parts__list--itemTronco-js").mouseenter(function(){
+		console.log("entro a #parts__list--itemTronco-js");
+		jQuery("#parts__section--itemMain-js").fadeOut("fast");
+		jQuery("#parts__section--itemTronco-js").fadeIn("fast");
+		// para cerrar el contenido de extremidades si esta abierto
+		jQuery("#parts__section--itemExtre-js").fadeOut("fast");
 		})
-	jQuery("#parts__list--itemTronco").mouseleave(function(){
-		jQuery("#parts__section--itemMain").fadeToggle("fast");
-		jQuery("#parts__section--itemTronco").fadeToggle("fast");
+	jQuery("#parts__list--itemTronco-js").mouseleave(function(){
+		console.log("salio de #parts__list--itemTronco-js");
+		jQuery("#parts__section--itemMain-js").fadeIn("fast");
+		jQuery("#parts__section--itemTronco-js").fadeOut("fast");
 		})
 
 	// Extremidades
-	jQuery("#parts__list--itemExtre").mouseenter(function(){
-		jQuery("#parts__section--itemMain").fadeOut("fast");
-		jQuery("#parts__section--itemExtre").fadeIn("fast");
+	jQuery("#parts__list--itemExtre-js").mouseenter(function(){
+		console.log("entro de #parts__list--itemExtre-js");
+		jQuery("#parts__section--itemMain-js").fadeOut("fast");
+		jQuery("#parts__section--itemExtre-js").fadeIn("fast");
+		})
+	jQuery("#parts__list--itemExtre-js").mouseleave(function(){
+		console.log("salio de #parts__list--itemExtre-js");
 		})
 	/* Fin Parts.html*/
 	

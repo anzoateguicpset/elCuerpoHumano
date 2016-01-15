@@ -1,17 +1,19 @@
-/* stylesheet parts.html */
-.parts,
-.parts__activities{
-	background: url(../../imagenes/background.png) no-repeat;
+/* styleshhet div partes del cuerpo humano */
+/*estas modificando este - pendiente*/
+.parts__section{
+	position: absolute;
+	padding: 0;
+	margin-right: 350px;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.6em;
+	border: 1px solid red;
+	width: 700px;
+	top: 50px;
+	left: 380px;
 }
-.parts__list{}
-.parts__list--item{}
-.parts__list--item:nth-child(2){
-	margin: 10px 1em;
-}
-.parts__section--main{
-	text-align: center;
-	margin-top: 3em;
-}
+
+
 .parts__imgSabiasQContainer{
 	width: 100%;
 	text-align: center;
