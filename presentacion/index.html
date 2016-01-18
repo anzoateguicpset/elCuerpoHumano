@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>El Cuerpo Humano</title>
 	<script src="../script/js/jquery-2.1.4.js"></script>
+	<script src="../script/js/jquery-ui.js"></script>
 	<script src="../script/js/js.js"></script>
 	<link rel="stylesheet" href="../script/css/main.css">
 	<meta name="viewport" content="width=1366, user-scalable=no">
@@ -199,24 +200,17 @@
 							</ul>
 						</p>
 
-						<!-- Ventana Modal 1 -->
-						<div class="modalmask" id="modalmask--js4" onclick="closeBoxModel4()">
-							<div class="modalbox movedown">
+
+						<!-- Container sabiasQue salud -->
+						<div class="health__sabiasQContainer--salud">
+							<div id="dialog" class="ventana">
 								<h2>Sabías que...</h2>
 								<p>
 									El tabaco es un tóxico que afecta el cuerpo y es la principal causa de cáncer del pulmón y de otros órganos, causa también hipertensión, asma, gastritis, entre otras enfermedades.
 								</p>
-							</div>	
-						</div>
-
-
-						<!-- imgSabiasQContainer -->
-						<div class="health__imgSabiasQContainer--salud">
-							<div class="health__imgSabiasQ" onclick="openBoxModel4()">
-								<img src="../imagenes/health__sb--img4.png">
 							</div>
-						</div>
-						<!-- Fin imgSabiasQContainer -->
+							<button id="opener" class="boton">Sabias Que</button>
+						</div> <!-- fin Container sabiasQue salud -->
 
 					</div>
 
@@ -287,7 +281,7 @@
 							</div>
 
 							<!-- imgSabiasQContainer -->
-							<div class="health__imgSabiasQContainer--alimentacion">
+							<div class="health__sabiasQContainer--alimentacion">
 								<div class="health__imgSabiasQ" onclick="openBoxModel1()">
 									<img src="../imagenes/health__sb--img1.png">
 								</div>

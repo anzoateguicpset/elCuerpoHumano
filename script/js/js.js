@@ -29,40 +29,23 @@ function changeBackground(object){
 	}
 }
 
-/* mejorar esto a una sola funcion*/
-function openBoxModel1(){
-	jQuery("#modalmask--js1").addClass("modalmaskActive");
-}
-
-function closeBoxModel1(){
-	jQuery("#modalmask--js1").removeClass("modalmaskActive");
-}
-
-function openBoxModel2(){
-	jQuery("#modalmask--js2").addClass("modalmaskActive");
-}
-
-function closeBoxModel2(){
-	jQuery("#modalmask--js2").removeClass("modalmaskActive");
-}
-
-function openBoxModel3(){
-	jQuery("#modalmask--js3").addClass("modalmaskActive");
-}
-
-function closeBoxModel3(){
-	jQuery("#modalmask--js3").removeClass("modalmaskActive");
-}
-
-function openBoxModel4(){
-	jQuery("#modalmask--js4").addClass("modalmaskActive");
-}
-
-function closeBoxModel4(){
-	jQuery("#modalmask--js4").removeClass("modalmaskActive");
-}
 jQuery(document).ready(function(){
 
+	$("#opener").click(function(){
+		console.log("alo");
+		$("#dialog").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog").click(function(){
+			$(this).dialog("close");
+		});
+	});
 	/* Parts.html */
 	// cabeza
 	jQuery("#parts__list--itemCabeza-js").mouseenter(function(){
