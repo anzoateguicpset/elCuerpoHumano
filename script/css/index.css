@@ -134,6 +134,7 @@ a{
                 width: 30px;
                 height: 30px;
                 position: relative;
+
             }   
                 /* circulo del centro */
                 .menu__inside--content--ulli:nth-child(2){
@@ -147,6 +148,10 @@ a{
                 left: -15px;
                 font-weight: bold;
                 font-size: .6em;
+            }
+            /* clase para afectar al texto del ultimo circulo*/
+            .cuidados{
+                left: -11px;
             }
 
 
@@ -219,7 +224,7 @@ a{
             /* esta clase es para el texto del segundo circulo
             para darle un margen independiente 
              */
-            .mhculli--text2{
+            .alimentacion{
                 left: -140%;
             }
 /* end - circulos de cada Item del menu */
