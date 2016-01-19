@@ -27,6 +27,8 @@
 .health__imgSabiasQ{
 	display: inline-block;
 }
+.boton{}
+
 .ventana{
 	border: 1px solid red;
 	display: none;

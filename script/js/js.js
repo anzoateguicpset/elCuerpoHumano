@@ -31,9 +31,14 @@ function changeBackground(object){
 
 jQuery(document).ready(function(){
 
-	$("#opener").click(function(){
-		console.log("alo");
-		$("#dialog").dialog({
+
+/*
+	* Funcion de la ventana modal de salud
+	*
+*/	
+	$("#opener1").click(function(){
+		console.log("SabiasQue Salud");
+		$("#dialog1").dialog({
 			dialogClass: "no-close",
             width: 1024,
             height: 350,
@@ -42,10 +47,63 @@ jQuery(document).ready(function(){
             resizable: "false",
             modal: "true"
 		});
-		$("#dialog").click(function(){
+		$("#dialog1").click(function(){
 			$(this).dialog("close");
 		});
 	});
+
+/*
+	* Funcion de la ventana modal de Alimentancion
+	*
+*/
+	$("#opener2").click(function(){
+		console.log("SabiasQue Alimentancion 1");
+		$("#dialog2").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog2").click(function(){
+			$(this).dialog("close");
+		});
+	});
+
+	$("#opener3").click(function(){
+		console.log("SabiasQue Alimentancion 1");
+		$("#dialog3").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog3").click(function(){
+			$(this).dialog("close");
+		});
+	});
+
+	$("#opener4").click(function(){
+		console.log("SabiasQue Alimentancion 3");
+		$("#dialog4").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog4").click(function(){
+			$(this).dialog("close");
+		});
+	});
+
 	/* Parts.html */
 	// cabeza
 	jQuery("#parts__list--itemCabeza-js").mouseenter(function(){
