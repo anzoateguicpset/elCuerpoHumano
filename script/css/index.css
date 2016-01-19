@@ -227,4 +227,22 @@ a{
             .alimentacion{
                 left: -140%;
             }
+
+/* 
+    * MENU 4 - Orientaciones
+ */
+.menu__orientaciones{
+    background: gray;
+}
+    /* texto dentro del orientaciones */
+    .menu__orientaciones--text{
+        color: #e1cd98;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 35px;
+        margin-left: -63px;
+        text-align: center;
+        line-height: 0.9;
+    }
+
 /* end - circulos de cada Item del menu */
