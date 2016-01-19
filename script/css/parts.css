@@ -12,6 +12,14 @@
 	left: 380px;
 }
 
+.parts_boton{
+	border: 2px solid green;
+}
+.parts_modalBox{
+	border: 1px solid blue;
+	display: none;
+	background: gray;
+}
 
 .parts__imgSabiasQContainer{
 	width: 100%;

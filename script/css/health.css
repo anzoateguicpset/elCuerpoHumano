@@ -27,10 +27,12 @@
 .health__imgSabiasQ{
 	display: inline-block;
 }
-.boton{}
+.health_boton{
+	border: 2px solid yellow;
+}
 
-.ventana{
-	border: 1px solid red;
+.health_modalBox{
+	border: 1px solid blue;
 	display: none;
 	background: gray;
 }
@@ -39,7 +41,9 @@
 	*
 	* La clase ui-dialog-titlebar es nativa de JQuery-UI
 	* donde se muestra la barra de titulo donde sale el 
-	* boton para cerrar
+	* boton para cerrar.
+	*
+	* Se oculta para cerrar la ventana haciendo en cualquier parte de ella
 	*
 */
 .ui-dialog-titlebar{

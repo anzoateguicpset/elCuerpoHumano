@@ -88,6 +88,27 @@ jQuery(document).ready(function(){
 		});
 	});
 
+/*
+	* Funcion de la ventana modal partes del cuerpo humano
+	*
+*/
+	$("#opener5").click(function(){
+		console.log("SabiasQue extremidades");
+		$("#dialog5").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog5").click(function(){
+			$(this).dialog("close");
+		});
+	});
+
+
 	$("#opener4").click(function(){
 		console.log("SabiasQue Alimentancion 3");
 		$("#dialog4").dialog({
