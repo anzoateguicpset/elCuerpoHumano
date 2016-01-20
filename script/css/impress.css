@@ -14,7 +14,9 @@
     height: 768px;
     z-index: 1;
 }
-
+#centro{
+    z-index: -1;
+}
 /* Estilo aplicados a todos los circulos, esten activos o no */
 .circle{
     position: absolute;
@@ -39,6 +41,9 @@
 .impress-on-overview .step {
     opacity: 1;
     cursor: pointer;
+}
+#centro{
+    z-index: -1;
 }
 
 /*

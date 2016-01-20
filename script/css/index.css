@@ -162,12 +162,17 @@
         color: #e1cd98;
         font-size: 1.5em;
         font-weight: bold;
-        margin-top: 15px;
+        margin-top: 13px;
         margin-left: -55px;
         text-align: center;
         line-height: 0.9;
-
     }
+        .salud{
+            margin-left: 54px;
+        }
+        .ye{
+            margin-left: 55px;
+        }
     /* Div del contenido del slide salud y alimentacion */
     .menu__health--content{
         position: relative;
