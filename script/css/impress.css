@@ -3,7 +3,7 @@
 /* estilos para los slides que no estan activos */
 .step {
     position: relative;
-    width: 300px;
+    width: 220px;
     height: 768px;
     z-index: 1;
 }
@@ -13,6 +13,7 @@
     width: 220px;
     height: 768px;
     z-index: 1;
+    border: 1px solid red;
 }
 
 /* Estilo aplicados a todos los circulos, esten activos o no */

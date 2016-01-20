@@ -31,7 +31,6 @@ function changeBackground(object){
 
 jQuery(document).ready(function(){
 
-
 /*
 	* Funcion de la ventana modal de salud
 	*
