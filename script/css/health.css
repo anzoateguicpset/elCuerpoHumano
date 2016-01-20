@@ -8,8 +8,7 @@
 	width: 950px;
 }
 
-
-/* Estilos de las ventanas modales que no me funcionan hasta ahora */
+/* Contenedores de los botones que activan las ventanas modales */
 .health__sabiasQContainer--salud{
 	width: 100%;
 	text-align: center;
@@ -23,14 +22,15 @@
 	bottom: -80px;
 }
 
-
 .health__imgSabiasQ{
 	display: inline-block;
 }
+
+/* boton ventana modal */
 .health_boton{
 	border: 2px solid yellow;
 }
-
+/* Ventana modal */
 .health_modalBox{
 	border: 1px solid blue;
 	display: none;
@@ -43,7 +43,7 @@
 	* donde se muestra la barra de titulo donde sale el 
 	* boton para cerrar.
 	*
-	* Se oculta para cerrar la ventana haciendo en cualquier parte de ella
+	* Se oculta para que no se muestre la X y cerrar la ventana haciendo clicken cualquier parte de la misma
 	*
 */
 .ui-dialog-titlebar{

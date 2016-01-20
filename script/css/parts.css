@@ -27,7 +27,3 @@
 	position: absolute;
 	bottom: -300px;
 }
-.parts__imgSabiasQ img:hover{
-	border: 1px solid red;
-	cursor: pointer;
-}

@@ -2,15 +2,12 @@
 .index{
 	background: url(../../imagenes/background.png) no-repeat;
 }
-a{
-	text-decoration: none;
-    color: #F10B0B;
-}
 
 /* id de los menus usados por impress js */
 #menu__1{}
 #menu__2{}
 #menu__3{}
+#menu__4{}
 
 
 /* circulos de cada Item del menu*/

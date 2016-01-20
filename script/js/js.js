@@ -1,5 +1,5 @@
 /*
-	*Funcion que muestra cada div con el contenido y oculta el resto
+	*Funcion que muestra cada div con el contenido y oculta el resto de los divs no activos
 	*La clase .content-js se usa para ocultar todos los div 
 	*La clase .menu__inside--img pertenece a la img principal cuando se abre la pagina
 	
@@ -88,6 +88,21 @@ jQuery(document).ready(function(){
 		});
 	});
 
+	$("#opener4").click(function(){
+		console.log("SabiasQue Alimentancion 3");
+		$("#dialog4").dialog({
+			dialogClass: "no-close",
+            width: 1024,
+            height: 350,
+            show: "bounce",
+            hide: "explode",
+            resizable: "false",
+            modal: "true"
+		});
+		$("#dialog4").click(function(){
+			$(this).dialog("close");
+		});
+	});
 /*
 	* Funcion de la ventana modal partes del cuerpo humano
 	*
@@ -109,21 +124,6 @@ jQuery(document).ready(function(){
 	});
 
 
-	$("#opener4").click(function(){
-		console.log("SabiasQue Alimentancion 3");
-		$("#dialog4").dialog({
-			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
-            show: "bounce",
-            hide: "explode",
-            resizable: "false",
-            modal: "true"
-		});
-		$("#dialog4").click(function(){
-			$(this).dialog("close");
-		});
-	});
 
 	/* Parts.html */
 	// cabeza

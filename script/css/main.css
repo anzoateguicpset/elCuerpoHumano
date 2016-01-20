@@ -1,4 +1,4 @@
-/* main stylesheet */
+/* stylesheet donde importo todas las demas stylesheet y agrego solo esta al head del documento*/
 @import url(index.css);
 @import url(impress.css);
 @import url(parts.css);
@@ -13,11 +13,13 @@ body {
     padding: 0;
     font-size: 16px;
 }
-a{}
+a{
+	text-decoration: none;
+    color: #F10B0B;
+}
 h2{
 	text-align: center;
 }
-/* Hidden class */
 .hidden{
 	display: none
 }
