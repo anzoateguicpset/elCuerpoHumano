@@ -57,12 +57,8 @@
                 width: 50px;
                 height: 50px;
                 position: relative;
+                margin-bottom: 1.5em;
             }   
-                /* circulo del centro */
-                .menu__parts--content--ulli:nth-child(2){
-                    margin-top: 1.5em;
-                    margin-bottom: 1.5em;
-                }
             /* texto circulos menu partes del cuerpo humano*/
             .menu__parts--content--ulli--text{
                 color: #ffffff;
@@ -206,12 +202,8 @@
                 width: 30px;
                 height: 30px;
                 position: relative;
+                margin-top: 2em;
             }
-                /* Primer circulo */
-                .menu__health--content--ulli:nth-child(1){
-                    margin-top: 2em;
-                    margin-bottom: 2em;
-                }
             /* texto circulos menu salud y alimentacion*/
             .menu__health--content--ulli--text{
                 position: absolute;
@@ -222,12 +214,15 @@
                 font-size: .6em;
                 text-align: left;
             }
-            /* esta clase es para el texto del segundo circulo
-            para darle un margen independiente 
-             */
-            .alimentacion{
-                left: -140%;
-            }
+                /* esta clase es para el texto del segundo circulo
+                para darle un margen independiente 
+                 */
+                .health__alimentacion{
+                    margin-left: -100%;
+                }
+                .health__actividades{
+                    margin-left: -85%;
+                }
 
 /* 
     * MENU 4 - Orientaciones
