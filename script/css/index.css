@@ -130,12 +130,9 @@
                 width: 30px;
                 height: 30px;
                 position: relative;
+                margin-right: 2em;
 
             }   
-                /* circulo del centro */
-                .menu__inside--content--ulli:nth-child(2){
-                    margin: 0 4em;
-                }
             /* texto circulos menu dentro del cuerpo humano*/
             .menu__inside--content--ulli--text{
                 color: #ffffff;
@@ -145,11 +142,14 @@
                 font-weight: bold;
                 font-size: .6em;
             }
-            /* clase para afectar al texto del ultimo circulo*/
-            .cuidados{
-                left: -11px;
-            }
-
+                /* clase para afectar al texto del circulo cuidados*/
+                .inside__cuidados{
+                    left: -11px;
+                }
+                /* clase para afectar al texto del circulo actividades*/
+                .inside__actividades{
+                    left: -25px;
+                }
 
 /* 
     menu 3 - Salud y alimentacion
