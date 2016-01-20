@@ -1,13 +1,12 @@
 /* styles of menu library impress of index.html */
 
+/* estilos para los slides que no estan activos */
 .step {
     position: relative;
     width: 300px;
     height: 768px;
     z-index: 1;
 }
-
-/* estilos para los slides que no estan activos */
 .slide {
     position: relative;
     display: block;
