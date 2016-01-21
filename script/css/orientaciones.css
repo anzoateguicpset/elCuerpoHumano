@@ -1,7 +1,13 @@
-/* stylesheet orientaciones.html */
-.orientaciones{
-	background: url(../../imagenes/background.png) no-repeat;
-}
-.orientaciones__list--item:nth-child(2){
-	margin: 0 1em;
+/* stylesheet orientaciones */
+.orientaciones__section{
+	position: absolute;
+	padding: 0;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.6em;
+	width: 950px;
+	border: 1px solid red;
+	margin-top: 10px;
+	left: 50%;
+	margin-left: -475px;
 }
