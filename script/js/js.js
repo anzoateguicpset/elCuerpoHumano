@@ -205,6 +205,16 @@ jQuery(document).ready(function(){
 	/*fin inside.html*/
 
 	/* Salud y Alimentacion */
+
+	/* Efecto del boton actividades */
+	jQuery("#health__actividades-js").mouseover(function(){
+		jQuery(".health__actividades--text").css({"color":"#892a2e"});
+		jQuery("#health__actividades-js").css({"background":"rgba(137, 42, 46, .5)"});
+	});
+	jQuery("#health__actividades-js").mouseout(function(){
+		jQuery(".health__actividades--text").css({"color":"#ffffff"});
+		jQuery("#health__actividades-js").css({"background":"#892a2e"});
+	});
 	// Salud
 	jQuery("#health__list--itemSalud-js").mouseenter(function(){
 		console.log("entro a #health__list--itemSalud-js");

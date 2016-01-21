@@ -213,15 +213,14 @@
                 font-size: .6em;
                 text-align: left;
             }
-                /* esta clase es para el texto del segundo circulo
-                para darle un margen independiente 
-                 */
-                .health__alimentacion{
+                /* Margenes independiente, clase para el texto */
+                .health__alimentacion--text{
                     margin-left: -100%;
                 }
-                .health__actividades{
+                .health__actividades--text{
                     margin-left: -85%;
                 }
+
 
 /* 
     * MENU 4 - Orientaciones
