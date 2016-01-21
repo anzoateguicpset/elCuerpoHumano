@@ -127,7 +127,20 @@ jQuery(document).ready(function(){
 
 
 
-	/* Parts.html */
+	/* 
+		*
+		*partes del cuerpo humano
+		*
+	 */
+	/* Efectos boton actividades */
+	jQuery("#parts__actividades-js").mouseover(function(){
+		jQuery(".parts__actividades--text").css({"color":"#bc7700"});
+		jQuery("#parts__actividades-js").css({"background":"rgba(188, 119, 0, .5)"});
+	});
+	jQuery("#parts__actividades-js").mouseout(function(){
+		jQuery(".parts__actividades--text").css({"color":"#ffffff"});
+		jQuery("#parts__actividades-js").css({"background":"#bc7700"});
+	});
 	// cabeza
 	jQuery("#parts__list--itemCabeza-js").mouseenter(function(){
 		console.log("entro a #parts__list--itemCabeza-js");
