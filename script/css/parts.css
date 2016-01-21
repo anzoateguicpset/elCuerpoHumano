@@ -11,7 +11,12 @@
 	left: 380px;
 }
 .parts_boton{
-	border: 2px solid green;
+	width: 70px;
+	height: 70px;
+    background: #bc7700;
+	color: #ffffff;
+	border-radius: 50%;
+	border: 0;
 }
 .parts_modalBox{
 	border: 1px solid blue;
