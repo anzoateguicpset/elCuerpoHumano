@@ -1,7 +1,7 @@
 /*
 	*Funcion que muestra cada div con el contenido y oculta el resto de los divs no activos
 	*La clase .content-js se usa para ocultar todos los div 
-	*La clase .menu__inside--img pertenece a la img principal cuando se abre la pagina
+	*La clase .centro--img pertenece a la img principal cuando se abre la pagina
 	
 	*Para buscar las etiquetas p dentro del objeto p, se puede hacer de la siguiente manera:
 	jQuery(object).find("p").fadeIn(1000);
@@ -9,7 +9,7 @@
 */
 function FadeInMsg(object) {
 	jQuery(".content-js").hide();
-	jQuery(".menu__inside--img").addClass("hidden");
+	jQuery(".centro--img").addClass("hidden");
 	jQuery("p", object).fadeIn(1000);
 	jQuery(".content-js", object).fadeIn(1000);
 }
@@ -32,6 +32,7 @@ function changeBackground(object){
 jQuery(document).ready(function(){
 
 /*
+	* 
 	* Funcion de la ventana modal de salud
 	*
 */	
@@ -52,6 +53,7 @@ jQuery(document).ready(function(){
 	});
 
 /*
+	*
 	* Funcion de la ventana modal de Alimentancion
 	*
 */
@@ -103,6 +105,7 @@ jQuery(document).ready(function(){
 		});
 	});
 /*
+	*
 	* Funcion de la ventana modal partes del cuerpo humano
 	*
 */

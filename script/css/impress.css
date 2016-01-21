@@ -14,9 +14,6 @@
     height: 768px;
     z-index: 1;
 }
-#centro{
-    z-index: -1;
-}
 /* Estilo aplicados a todos los circulos, esten activos o no */
 .circle{
     position: absolute;
@@ -49,14 +46,3 @@
 /*
     *impress.js utiliza las clases .active .future .past para el slide activo, el que paso o el que viene
  */
-
-
-/* estas clases creo que no las necesitares mas */
-
-/*
-.active span{}
-.active p{}
-.future p{}
-.past p{}
-
-*/

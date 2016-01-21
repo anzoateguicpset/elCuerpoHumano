@@ -1,18 +1,25 @@
-/* styles of index.html */
+/* stylesheet of index.html */
 .index{
-	background: url(../../imagenes/background.png) no-repeat;
+    background: url(../../imagenes/background.png) no-repeat;
 }
 
-/* id de los menus usados por impress js */
-#menu__1{}
-#menu__2{}
-#menu__3{}
-#menu__4{}
+/* Slide hidden utilizado para que la img principal se muestre y centren los demas slides respecto a el */
+#centro{}
+    /* esta es la imagen principal, que aparece cuando se abre por primera vez */
+    .centro--img{
+        position: absolute;
+        height: 333px;
+        width: 621px;
+        top: 350px;
+        left: -190px;
+    }
 
-/* circulos de cada Item del menu*/
-/* 
-    menu 1 - Partes del cuerpo humano
- */
+/*  
+    ===============================
+    circulos de cada Item del menu
+    ===============================
+*/
+/* menu 1 - Partes del cuerpo humano */
 .menu__parts{
     background: #d99118;
 }
@@ -84,14 +91,6 @@
         margin-left: -15px;
         text-align: center;
         line-height: 0.9;
-    }
-    /* esta es la imagen principal, que aparece cuando se abre por primera vez */
-    .menu__inside--img{
-        position: absolute;
-        height: 333px;
-        width: 621px;
-        top: 350px;
-        left: -190px;
     }
     /* Div del contenido del slide dentro del cuerpo humano*/
     .menu__inside--content{
@@ -242,3 +241,16 @@
     }
 
 /* end - circulos de cada Item del menu */
+
+/* 
+    *
+    * La clase ui-dialog-titlebar es nativa de JQuery-UI
+    * donde se muestra la barra de titulo donde sale el 
+    * boton para cerrar.
+    *
+    * Se oculta para que no se muestre la X y cerrar la ventana haciendo clicken cualquier parte de la misma
+    *
+*/
+.ui-dialog-titlebar{
+  display: none;
+}

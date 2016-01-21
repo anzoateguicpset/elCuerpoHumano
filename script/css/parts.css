@@ -1,5 +1,4 @@
 /* styleshhet div partes del cuerpo humano */
-/*estas modificando este - pendiente*/
 .parts__section{
 	position: absolute;
 	padding: 0;
@@ -11,7 +10,6 @@
 	top: 50px;
 	left: 380px;
 }
-
 .parts_boton{
 	border: 2px solid green;
 }
@@ -20,7 +18,6 @@
 	display: none;
 	background: gray;
 }
-
 .parts__imgSabiasQContainer{
 	width: 100%;
 	text-align: center;

@@ -1,4 +1,4 @@
-/* stylesheet donde importo todas las demas stylesheet y agrego solo esta al head del documento*/
+/* stylesheet donde se importan todas las demas stylesheet y se agrega solo esta al head del documento*/
 @import url(index.css);
 @import url(impress.css);
 @import url(parts.css);
@@ -23,6 +23,7 @@ h2{
 .hidden{
 	display: none
 }
+/* Clase de prueba */
 .bor{
 	border: 1px solid red;
 }
