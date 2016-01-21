@@ -61,8 +61,8 @@ jQuery(document).ready(function(){
 		console.log("SabiasQue Alimentancion 1");
 		$("#dialog2").dialog({
 			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
+            width: 1366,
+            height: 800,
             show: "bounce",
             hide: "explode",
             resizable: "false",
@@ -77,8 +77,8 @@ jQuery(document).ready(function(){
 		console.log("SabiasQue Alimentancion 1");
 		$("#dialog3").dialog({
 			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
+            width: 1366,
+            height: 800,
             show: "bounce",
             hide: "explode",
             resizable: "false",
@@ -93,8 +93,8 @@ jQuery(document).ready(function(){
 		console.log("SabiasQue Alimentancion 3");
 		$("#dialog4").dialog({
 			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
+            width: 1366,
+            height: 800,
             show: "bounce",
             hide: "explode",
             resizable: "false",
@@ -113,8 +113,8 @@ jQuery(document).ready(function(){
 		console.log("SabiasQue extremidades");
 		$("#dialog5").dialog({
 			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
+            width: 1366,
+            height: 800,
             show: "bounce",
             hide: "explode",
             resizable: "false",
