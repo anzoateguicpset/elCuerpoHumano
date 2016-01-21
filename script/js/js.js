@@ -40,8 +40,8 @@ jQuery(document).ready(function(){
 		console.log("SabiasQue Salud");
 		$("#dialog1").dialog({
 			dialogClass: "no-close",
-            width: 1024,
-            height: 350,
+            width: 1366,
+            height: 800,
             show: "bounce",
             hide: "explode",
             resizable: "false",
