@@ -168,7 +168,20 @@ jQuery(document).ready(function(){
 	/* Fin Parts.html*/
 	
 
-	/* dentro del cuerpo humano */
+	/* 
+		*
+		*dentro del cuerpo humano
+		*
+	 */
+	/* Efectos boton actividades */
+	jQuery("#inside__actividades-js").mouseover(function(){
+		jQuery(".inside__actividades--text").css({"color":"#006857"});
+		jQuery("#inside__actividades-js").css({"background":"rgba(0, 104, 87, .5)"});
+	});
+	jQuery("#inside__actividades-js").mouseout(function(){
+		jQuery(".inside__actividades--text").css({"color":"#ffffff"});
+		jQuery("#inside__actividades-js").css({"background":"#006857"});
+	});
 	//musculos
 	jQuery("#inside__list--itemMusculos-js").mouseenter(function(){
 		console.log("entro al id #inside__list--itemMusculos-js");
@@ -204,8 +217,11 @@ jQuery(document).ready(function(){
 	})
 	/*fin inside.html*/
 
-	/* Salud y Alimentacion */
-
+	/* 
+		*
+		*Salud y Alimentacion
+		*
+	*/
 	/* Efecto del boton actividades */
 	jQuery("#health__actividades-js").mouseover(function(){
 		jQuery(".health__actividades--text").css({"color":"#892a2e"});
