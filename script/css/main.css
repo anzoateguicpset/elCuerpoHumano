@@ -27,3 +27,9 @@ h2{
 .bor{
 	border: 1px solid red;
 }
+.no-selec{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}

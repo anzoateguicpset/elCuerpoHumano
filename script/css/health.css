@@ -13,7 +13,7 @@
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	bottom: -150px
+	bottom: -150px;
 }
 .health__sabiasQContainer--alimentacion{
 	width: 100%;
@@ -28,8 +28,12 @@
 
 /* boton ventana modal */
 .health_boton{
-	border: 2px solid yellow;
-
+	width: 70px;
+	height: 70px;
+    background: #892a2e;
+	color: #ffffff;
+	border-radius: 50%;
+	border: 0;
 }
 /* Ventana modal */
 .health_modalBox{
