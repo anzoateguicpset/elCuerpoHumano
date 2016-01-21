@@ -128,23 +128,23 @@
                 margin-right: 2em;
 
             }   
-            /* texto circulos menu dentro del cuerpo humano*/
-            .menu__inside--content--ulli--text{
-                color: #ffffff;
-                position: absolute;
-                top: 40%;
-                left: -15px;
-                font-weight: bold;
-                font-size: .6em;
-            }
-                /* clase para afectar al texto del circulo cuidados*/
-                .inside__cuidados{
-                    left: -11px;
+                /* texto circulos menu dentro del cuerpo humano*/
+                .menu__inside--content--ulli--text{
+                    color: #ffffff;
+                    position: absolute;
+                    top: 40%;
+                    left: -15px;
+                    font-weight: bold;
+                    font-size: .6em;
                 }
-                /* clase para afectar al texto del circulo actividades*/
-                .inside__actividades--text{
-                    left: -25px;
-                }
+                    /* clase para afectar al texto del circulo cuidados*/
+                    .inside__cuidados{
+                        left: -11px;
+                    }
+                    /* clase para afectar al texto del circulo actividades*/
+                    .inside__actividades--text{
+                        left: -25px;
+                    }
 
 /* 
     menu 3 - Salud y alimentacion
@@ -228,7 +228,7 @@
 .menu__orientaciones{
     background: gray;
 }
-    /* texto dentro del orientaciones */
+    /* texto dentro del circulo orientaciones */
     .menu__orientaciones--text{
         color: #e1cd98;
         font-size: 1.5em;
@@ -238,7 +238,44 @@
         text-align: center;
         line-height: 0.9;
     }
-
+    /* div del contenido de orientaciones*/
+    .menu__orientaciones--content{
+        position: relative;
+        top: 240px;
+        left: -520px;
+        width: 1300px;
+        height: 510px;
+        border: 1px solid red;
+    }
+        .menu__orientaciones--content--img{}
+        .menu__orientaciones--content--ul{
+            position: absolute;
+            list-style: none;
+            margin: 0;
+            bottom: 5px;
+            width: 96.7%;
+            text-align: center;
+            border: 1px solid blue;
+        }
+            .menu__orientaciones--content--ulli{
+                display: inline-block;
+                background: #006857;
+                border-radius: 50%;
+                font-size: 2em;
+                padding: 1em;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                margin-right: 2em;
+            }
+                .menu__orientaciones--content--ulli--text{
+                    color: #ffffff;
+                    position: absolute;
+                    top: 40%;
+                    left: -15px;
+                    font-weight: bold;
+                    font-size: .6em;
+                }
 /* end - circulos de cada Item del menu */
 
 /* 

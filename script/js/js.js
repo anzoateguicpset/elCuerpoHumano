@@ -27,6 +27,9 @@ function changeBackground(object){
 	if (r == "menu__3"){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu3.png)');
 	}
+	if (r == "menu__4"){
+		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu2.png)');
+	}
 }
 
 jQuery(document).ready(function(){
