@@ -1,22 +1,20 @@
-/*
-*
-*
-
-	*Funcion que muestra cada div con el contenido y oculta el resto de los divs no activos
-	*La clase .content-js se usa para ocultar todos los div 
-	*La clase .centro--img pertenece a la img principal cuando se abre la pagina
-	
-	*Para buscar las etiquetas p dentro del objeto p, se puede hacer de la siguiente manera:
-	jQuery(object).find("p").fadeIn(1000);
-	En la funcion se usa una forma mas corta
-*/
+/**
+ * [FadeInMsg Oculta los divs no activos y muestra el del slide activo]
+ * La clase .content-js se usa para ocultar todos los div
+ * La clase .centro--img pertenece a la img principal cuando se abre la pagina	
+ * @param {[object]} object [objeto de la elemento que llama a la funcion]
+ */	
 function FadeInMsg(object) {
 	jQuery(".content-js").hide();
 	jQuery(".centro--img").addClass("hidden");
-	jQuery("p", object).fadeIn(1000);
+	jQuery("p", object).fadeIn(1000);// jQuery(object).find("p").fadeIn(1000);
 	jQuery(".content-js", object).fadeIn(1000);
 }
 
+/**
+ * [changeBackground Cambia el fondo al pasar de un slide a otro]
+ * @param  {[object]} object [objeto de la elemento que llama a la funcion]
+ */
 function changeBackground(object){
 	console.log("entro a la funcion changeBackground");
 	var r = jQuery(object).attr("id");
@@ -36,12 +34,9 @@ function changeBackground(object){
 }
 
 jQuery(document).ready(function(){
-
-/*
-	* 
-	* Funcion de la ventana modal de salud
-	*
-*/	
+	///////////////////////////
+	//ventana modal de salud //
+	///////////////////////////
 	$("#opener1").click(function(){
 		console.log("SabiasQue Salud");
 		$("#dialog1").dialog({
@@ -58,11 +53,9 @@ jQuery(document).ready(function(){
 		});
 	});
 
-/*
-	*
-	* Funcion de la ventana modal de Alimentancion
-	*
-*/
+	//////////////////////////////////
+	//ventana modal de alimentacion //
+	//////////////////////////////////
 	$("#opener2").click(function(){
 		console.log("SabiasQue Alimentancion 1");
 		$("#dialog2").dialog({
@@ -110,11 +103,10 @@ jQuery(document).ready(function(){
 			$(this).dialog("close");
 		});
 	});
-/*
-	*
-	* Funcion de la ventana modal partes del cuerpo humano
-	*
-*/
+
+	///////////////////////////////////////////
+	//ventana modal partes del cuerpo humano //
+	///////////////////////////////////////////
 	$("#opener5").click(function(){
 		console.log("SabiasQue extremidades");
 		$("#dialog5").dialog({
@@ -131,12 +123,10 @@ jQuery(document).ready(function(){
 		});
 	});
 
-	/* 
-		*
-		*partes del cuerpo humano
-		*
-	 */
-	/* Efectos boton actividades */
+	/////////////////////////////
+	//partes del cuerpo humano //
+	/////////////////////////////
+		// Efectos boton actividades 
 	jQuery("#parts__actividades-js").mouseover(function(){
 		jQuery(".parts__actividades--text").css({"color":"#bc7700"});
 		jQuery("#parts__actividades-js").css({"background":"rgba(188, 119, 0, .5)"});
@@ -145,35 +135,31 @@ jQuery(document).ready(function(){
 		jQuery(".parts__actividades--text").css({"color":"#ffffff"});
 		jQuery("#parts__actividades-js").css({"background":"#bc7700"});
 	});
-	// cabeza
+		// cabeza
 	jQuery("#parts__list--itemCabeza-js").mouseenter(function(){
 		console.log("entro a #parts__list--itemCabeza-js");
 		jQuery("#parts__section--itemMain-js").fadeOut("fast");
 		jQuery("#parts__section--itemCabeza-js").fadeIn("fast");
-		// para cerrar el contenido de extremidades si esta abierto
-		jQuery("#parts__section--itemExtre-js").fadeOut("fast");
+		jQuery("#parts__section--itemExtre-js").fadeOut("fast");// para cerrar el contenido de extremidades si esta abierto
 		})
 	jQuery("#parts__list--itemCabeza-js").mouseleave(function(){
 		console.log("salio de #parts__list--itemCabeza-js");
 		jQuery("#parts__section--itemMain-js").fadeIn("fast");
 		jQuery("#parts__section--itemCabeza-js").fadeOut("fast");
 	})
-
-	// Tronco
+		// Tronco
 	jQuery("#parts__list--itemTronco-js").mouseenter(function(){
 		console.log("entro a #parts__list--itemTronco-js");
 		jQuery("#parts__section--itemMain-js").fadeOut("fast");
 		jQuery("#parts__section--itemTronco-js").fadeIn("fast");
-		// para cerrar el contenido de extremidades si esta abierto
-		jQuery("#parts__section--itemExtre-js").fadeOut("fast");
+		jQuery("#parts__section--itemExtre-js").fadeOut("fast"); // para cerrar el contenido de extremidades si esta abierto
 		})
 	jQuery("#parts__list--itemTronco-js").mouseleave(function(){
 		console.log("salio de #parts__list--itemTronco-js");
 		jQuery("#parts__section--itemMain-js").fadeIn("fast");
 		jQuery("#parts__section--itemTronco-js").fadeOut("fast");
 		})
-
-	// Extremidades
+		// Extremidades
 	jQuery("#parts__list--itemExtre-js").mouseenter(function(){
 		console.log("entro de #parts__list--itemExtre-js");
 		jQuery("#parts__section--itemMain-js").fadeOut("fast");
@@ -182,15 +168,11 @@ jQuery(document).ready(function(){
 	jQuery("#parts__list--itemExtre-js").mouseleave(function(){
 		console.log("salio de #parts__list--itemExtre-js");
 		})
-	/* Fin Parts.html*/
-	
 
-	/* 
-		*
-		*dentro del cuerpo humano
-		*
-	 */
-	/* Efectos boton actividades */
+	//////////////////////////////
+	// Dentro del cuerpo humano //
+	//////////////////////////////
+		// Efectos boton actividades
 	jQuery("#inside__actividades-js").mouseover(function(){
 		jQuery(".inside__actividades--text").css({"color":"#006857"});
 		jQuery("#inside__actividades-js").css({"background":"rgba(0, 104, 87, .5)"});
@@ -199,7 +181,7 @@ jQuery(document).ready(function(){
 		jQuery(".inside__actividades--text").css({"color":"#ffffff"});
 		jQuery("#inside__actividades-js").css({"background":"#006857"});
 	});
-	//musculos
+		//musculos
 	jQuery("#inside__list--itemMusculos-js").mouseenter(function(){
 		console.log("entro al id #inside__list--itemMusculos-js");
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
@@ -210,7 +192,7 @@ jQuery(document).ready(function(){
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
 		jQuery("#inside__section--itemMusculos-js").fadeToggle("fast");
 	})
-	//Esqueleto
+		//Esqueleto
 	jQuery("#inside__list--itemEsqueleto-js").mouseenter(function(){
 		console.log("entro al id #inside__list--itemEsqueleto-js");
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
@@ -221,7 +203,7 @@ jQuery(document).ready(function(){
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
 		jQuery("#inside__section--itemEsqueleto-js").fadeToggle("fast");
 	})
-	//cuidados
+		//cuidados
 	jQuery("#inside__list--itemCuidados-js").mouseenter(function(){
 		console.log("entro al id #inside__list--itemCuidados-js");
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
@@ -232,14 +214,11 @@ jQuery(document).ready(function(){
 		jQuery("#inside__section--itemMain-js").fadeToggle("fast");
 		jQuery("#inside__section--itemCuidados-js").fadeToggle("fast");
 	})
-	/*fin inside.html*/
 
-	/* 
-		*
-		*Salud y Alimentacion
-		*
-	*/
-	/* Efecto del boton actividades */
+	/////////////////////////
+	//Salud y Alimentacion //
+	/////////////////////////
+		// Efecto del boton actividades
 	jQuery("#health__actividades-js").mouseover(function(){
 		jQuery(".health__actividades--text").css({"color":"#892a2e"});
 		jQuery("#health__actividades-js").css({"background":"rgba(137, 42, 46, .5)"});
@@ -248,50 +227,45 @@ jQuery(document).ready(function(){
 		jQuery(".health__actividades--text").css({"color":"#ffffff"});
 		jQuery("#health__actividades-js").css({"background":"#892a2e"});
 	});
-	// Salud
+		// Salud
 	jQuery("#health__list--itemSalud-js").mouseenter(function(){
 		console.log("entro a #health__list--itemSalud-js");
 		jQuery("#health__section--itemSalud-js").fadeIn("fast");
 		jQuery("#health__section--itemMain-js").hide();
 		jQuery("#health__section--itemAlimentacion-js").hide();
 		})
-	// Alimentacion
+		// Alimentacion
 	jQuery("#health__list--itemAlimentacion-js").mouseenter(function(){
 		console.log("entro a  #health__list--itemAlimentacion-js");
 		jQuery("#health__section--itemAlimentacion-js").fadeIn("fast");
 		jQuery("#health__section--itemMain-js").fadeOut("fast");
 		jQuery("#health__section--itemSalud-js").fadeOut("fast");
 		})
-	/*fin health.html*/
 
-	/* 
-		*
-		* Orientaciones
-		*
-	 */
-	// ninos
+	//////////////////
+	//orientaciones //
+	//////////////////
+		// ninos
 	jQuery("#orientaciones__list--itemNino-js").mouseenter(function(){
 		jQuery("#orientaciones__section--itemNino-js").fadeToggle("fast");
 		})
 	jQuery("#orientaciones__list--itemNino-js").mouseleave(function(){
 		jQuery("#orientaciones__section--itemNino-js").fadeToggle("fast");
 	})
-	// pedagogicas
+		// pedagogicas
 	jQuery("#orientaciones__list--itemPedag-js").mouseenter(function(){
 		jQuery("#orientaciones__section--itemPedag-js").fadeToggle("fast");
 		})
 	jQuery("#orientaciones__list--itemPedag-js").mouseleave(function(){
 		jQuery("#orientaciones__section--itemPedag-js").fadeToggle("fast");
 	})
-	// Familia
+		// Familia
 	jQuery("#orientaciones__list--itemFamilia-js").mouseenter(function(){
 		jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
 		})
 	jQuery("#orientaciones__list--itemFamilia-js").mouseleave(function(){
 		jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
 	})
-	/*Fin Orientaciones*/
-
 });
 
 
