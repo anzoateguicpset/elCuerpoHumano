@@ -1,4 +1,7 @@
 /*
+*
+*
+
 	*Funcion que muestra cada div con el contenido y oculta el resto de los divs no activos
 	*La clase .content-js se usa para ocultar todos los div 
 	*La clase .centro--img pertenece a la img principal cuando se abre la pagina
@@ -127,8 +130,6 @@ jQuery(document).ready(function(){
 			$(this).dialog("close");
 		});
 	});
-
-
 
 	/* 
 		*
@@ -262,7 +263,6 @@ jQuery(document).ready(function(){
 		jQuery("#health__section--itemSalud-js").fadeOut("fast");
 		})
 	/*fin health.html*/
-
 
 	/* 
 		*

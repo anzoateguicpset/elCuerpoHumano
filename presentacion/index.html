@@ -10,24 +10,19 @@
 	<meta name="viewport" content="width=1366, user-scalable=no">
 	<meta name="description" content="Actividad digitalizada de aprendizaje - El Cuerpo Humano">
 	<meta name="author" content="Franklin Lugo">
-
 </head>
 <body class="index no-selec">
-
 	<div id="impress">
-		
 		<!-- 
 			*la clase .content-js, se usa con js para mantener oculto el div de los slides no acivos.
 			*la clase .hidden, se usa para mantener oculto todo  el contenido cuando sale la img ppal
 			*El menu 2 esta de primero para que salga en el centro cuando se abra la pagina
 		 -->
-		
 		<div id="centro" class="step slide" data-x="0" data-y="0" data-z="0" data-rotate-z="0">
 			<figure>
 				<img src="../imagenes/logo-ppal.png" alt="imagen principal" class="centro--img">
 			</figure>
 		</div>
-
 		<!--
 			=================================
 			Menu 2 - Dentro del Cuerpo Humano
@@ -40,7 +35,7 @@
 				<ul class="menu__inside--content--ul">
 					<li id="inside__list--itemMusculos-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">MÚSCULOS</div></li>
 					<li id="inside__list--itemEsqueleto-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text">ESQUELETO</div></li>
-					<li id="inside__list--itemCuidados-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text inside__cuidados">CUIDADOS</div></li>
+					<li id="inside__list--itemCuidados-js" class="menu__inside--content--ulli">&nbsp;<div class="menu__inside--content--ulli--text inside__cuidados--text">CUIDADOS</div></li>
 					<a href="../actividades/inside_activities.html">
 						<li class="menu__inside--content--ulli" id="inside__actividades-js">&nbsp;<div class="menu__inside--content--ulli--text inside__actividades--text">ACTIVIDADES</div></li>
 					</a>
@@ -81,9 +76,7 @@
 				</section>
 				<!--  -->
 			</div><!-- End menu__inside--content  -->
-
         </div><!-- End Menu 2 - Dentro del Cuerpo Humano -->
-		
 		<!--
 			=================================
 			Menu 1 - Partes del Cuerpo Humano
@@ -92,7 +85,6 @@
         <div id="menu__1" onclick="FadeInMsg(this); changeBackground(this);" class="step slide" data-x="120" data-y="0" data-z="0" data-rotate-z="0" >
             <span class="circle menu__parts"><div class="menu__parts--text">PARTES DEL CUERPO HUMANO</div></span>
 
-            
             <div class="content-js menu__parts--content hidden">
             	<ul class="menu__parts--content--ul">
             		<li id="parts__list--itemCabeza-js" class="menu__parts--content--ulli">&nbsp;<div class="menu__parts--content--ulli--text">CABEZA</div></li>
@@ -132,7 +124,6 @@
 	            			Son órganos externos y articulados; son las partes del cuerpo que sobresalen del tronco, pero que está unido a el como los brazos, las manos, las piernas y los pies.
 	            		</p>
 
-
 	            		<!-- Ventana Modal 5 -->
 	            			<div id="dialog5" class="parts_modalBox">
 	            				<div class="parts_modalBox--msg">
@@ -143,24 +134,21 @@
 	            				</div>
 	            			</div>	
 
-
-	            		<!-- imgSabiasQContainer -->
-	            		<!-- imgSabiasQContainer ocupa el 100% del ancho de la pagina para centrar dentro el div que contiene la ventana modal-->
-	            		<div class="parts__imgSabiasQContainer">
-	            			<button id="opener5" class="parts_boton">Sabias que</button>
-	            		</div>
-	            		<!-- Fin imgSabiasQContainer -->
+		            		<!-- imgSabiasQContainer -->
+		            		<!-- imgSabiasQContainer ocupa el 100% del ancho de la pagina para centrar dentro el div que contiene la ventana modal-->
+		            		<div class="parts__imgSabiasQContainer">
+		            			<button id="opener5" class="parts_boton">Sabias que</button>
+		            		</div>
+		            		<!-- Fin imgSabiasQContainer -->
 	            	</div>
 	            </section>
 	            <!--  -->
             
             	<figure class="menu__parts--content--img">
-            		<img src="../imagenes/logo-peq.png" alt="img div">
+            		<img src="../imagenes/logo-peq.png" alt="img menu">
             	</figure>
             </div><!--  End menu__parts--content -->
         </div><!-- End Menu 1 - Partes del Cuerpo Humano -->
-
-		
 		<!--
 			=============================
 			Menu 3 - Salud y alimentacion
@@ -179,13 +167,13 @@
 						<li class="menu__health--content--ulli" id="health__actividades-js">&nbsp;<div class="menu__health--content--ulli--text health__actividades--text">ACTIVIDADES</div></li>
 					</a>
 				</ul>
+
 				<figure class="menu__health--content--img">
 					<img src="../imagenes/logo-peq.png" alt="img div">
 				</figure>
 
 				<!--  -->
 				<section>
-					
 					<div class="healt__section" id="health__section--itemSalud-js">
 						<p>
 							Cuando nuestro cuerpo no funciona bien, decimos que estamos enfermos. Las enfermedades nos hacen perder la salud, en muchas ocasiones son causadas por organismos que no vemos a simple vista como: las bacterias, los virus y además por los accidentes.
@@ -202,7 +190,6 @@
 								<li>Realizar ejercicios frecuentemente</li>
 							</ul>
 						</p>
-
 
 						<!-- Container sabiasQue salud -->
 						<div class="health__sabiasQContainer--salud">
@@ -234,7 +221,7 @@
 							</ul>
 						</p>
 							
-							<!-- Ventana Modal 2 -->
+								<!-- Ventana Modal 2 -->
 								<div id="dialog2" class="health_modalBox">
 									<div class="health_modalBox--msg">
 										<h2>Sabías que...</h2>
@@ -249,7 +236,7 @@
 									</div>
 								</div>	
 
-							<!-- Ventana Modal 3 -->
+								<!-- Ventana Modal 3 -->
 								<div id="dialog3" class="health_modalBox">
 									<div class="health_modalBox--msg">
 										<h2>Sabías que...</h2>
@@ -265,7 +252,7 @@
 									</div>
 								</div>	
 
-							<!-- Ventana Modal 4 -->
+								<!-- Ventana Modal 4 -->
 								<div id="dialog4" class="health_modalBox">
 									<div class="health_modalBox--msg">
 										<h2>Sabías que...</h2>
@@ -285,13 +272,12 @@
 									</div>
 								</div>	
 
-							<!-- imgSabiasQContainer -->
+								<!-- imgSabiasQContainer -->
 							<div class="health__sabiasQContainer--alimentacion">
 								<button id="opener2" class="health_boton">Sabias Que 1</button>
 								<button id="opener3" class="health_boton">Sabias Que 2</button>
 								<button id="opener4" class="health_boton">Sabias Que 3</button>
-							</div>
-							<!-- Fin imgSabiasQContainer -->
+							</div><!-- Fin imgSabiasQContainer -->
 					</div>
 				</section>
 				<!--  -->
@@ -320,32 +306,32 @@
 					<img src="#" alt="img orientaciones">
 				</figure>
  -->
- 			<content>
- 				<div class="orientaciones__section hidden" id="orientaciones__section--itemNino-js">
- 					<h2>Orientaciones a la niña y al niño</h2>
- 					<ul>
- 						<li>Elabora con algún miembro de tu familia o corresponsable recetas de cocina sencillas y conversa con ellas sobre la importancia de consumir alimentos balanceados para tener una buena salud</li>
- 						<li>Intercambiar ideas con tus compañeros sobre el cuidado del cuerpo humano y sus sintomas</li>
- 						<li>Practica actividades físicas o recreativas para disfrutar de una buena salud</li>
- 					</ul>
- 				</div>
- 				<div class="orientaciones__section hidden" id="orientaciones__section--itemPedag-js">
- 					<h2>Orientaciones pedagógicas</h2>
- 					<ul>
- 						<li>Promueve talleres, foros y exposiciones involucrando a las niñas, niños y comunidad en general sobre los alimentos que proporcionan beneficios al organismo</li>
- 						<li>Propicia actividades deportivas - recreativas entre las niñas y los niños para mantener la mente sana y el cuerpo sano</li>
- 						<li>Invita a los centros de salud más cercanos a la institución educativa, para realizar jornadas a fin de preservar la salud</li>
- 					</ul>
- 				</div>
- 				<div class="orientaciones__section hidden" id="orientaciones__section--itemFamilia-js">
- 					<h2>Orientaciones a la familia y corresponsables</h2>
- 					<ul>
- 						<li>Despierta el interés en la niña y el niño sobre las actividades que ayudan a mantener en condiciones óptimas el cuerpo humano</li>
- 						<li>Participa con la niña y el niño en talleres, foros y exposiciones a fin de prevenir enfermedades</li>
- 						<li>Apoya al docente en la elaboración de carteleras, trípticos donde se enfaticen las normas de higiene que favorezcan la salud</li>
- 					</ul>
- 				</div>
- 			</content>	
+	 			<content>
+	 				<div class="orientaciones__section hidden" id="orientaciones__section--itemNino-js">
+	 					<h2>Orientaciones a la niña y al niño</h2>
+	 					<ul>
+	 						<li>Elabora con algún miembro de tu familia o corresponsable recetas de cocina sencillas y conversa con ellas sobre la importancia de consumir alimentos balanceados para tener una buena salud</li>
+	 						<li>Intercambiar ideas con tus compañeros sobre el cuidado del cuerpo humano y sus sintomas</li>
+	 						<li>Practica actividades físicas o recreativas para disfrutar de una buena salud</li>
+	 					</ul>
+	 				</div>
+	 				<div class="orientaciones__section hidden" id="orientaciones__section--itemPedag-js">
+	 					<h2>Orientaciones pedagógicas</h2>
+	 					<ul>
+	 						<li>Promueve talleres, foros y exposiciones involucrando a las niñas, niños y comunidad en general sobre los alimentos que proporcionan beneficios al organismo</li>
+	 						<li>Propicia actividades deportivas - recreativas entre las niñas y los niños para mantener la mente sana y el cuerpo sano</li>
+	 						<li>Invita a los centros de salud más cercanos a la institución educativa, para realizar jornadas a fin de preservar la salud</li>
+	 					</ul>
+	 				</div>
+	 				<div class="orientaciones__section hidden" id="orientaciones__section--itemFamilia-js">
+	 					<h2>Orientaciones a la familia y corresponsables</h2>
+	 					<ul>
+	 						<li>Despierta el interés en la niña y el niño sobre las actividades que ayudan a mantener en condiciones óptimas el cuerpo humano</li>
+	 						<li>Participa con la niña y el niño en talleres, foros y exposiciones a fin de prevenir enfermedades</li>
+	 						<li>Apoya al docente en la elaboración de carteleras, trípticos donde se enfaticen las normas de higiene que favorezcan la salud</li>
+	 					</ul>
+	 				</div>
+	 			</content>	
 			</div><!-- End menu__orientaciones--content  -->
 		</div><!-- End Menu 4 - Orientaciones -->
 

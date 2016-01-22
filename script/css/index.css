@@ -66,15 +66,15 @@
                 position: relative;
                 margin-bottom: 1.5em;
             }   
-            /* texto circulos menu partes del cuerpo humano*/
-            .menu__parts--content--ulli--text{
-                color: #ffffff;
-                position: absolute;
-                top: 40%;
-                left: 55%;
-                font-weight: bold;
-                font-size: 1em;
-            }
+                /* texto circulos menu partes del cuerpo humano*/
+                .menu__parts--content--ulli--text{
+                    color: #ffffff;
+                    position: absolute;
+                    top: 40%;
+                    left: 55%;
+                    font-weight: bold;
+                    font-size: 1em;
+                }
 
 /* 
     menu 2 - Dentro del cuerpo humano
@@ -138,7 +138,7 @@
                     font-size: .6em;
                 }
                     /* clase para afectar al texto del circulo cuidados*/
-                    .inside__cuidados{
+                    .inside__cuidados--text{
                         left: -11px;
                     }
                     /* clase para afectar al texto del circulo actividades*/
@@ -203,23 +203,23 @@
                 position: relative;
                 margin-top: 2em;
             }
-            /* texto circulos menu salud y alimentacion*/
-            .menu__health--content--ulli--text{
-                position: absolute;
-                color: #ffffff;
-                top: 40%;
-                left: -40%;
-                font-weight: bold;
-                font-size: .6em;
-                text-align: left;
-            }
-                /* Margenes independiente, clase para el texto */
-                .health__alimentacion--text{
-                    margin-left: -100%;
+                /* texto circulos menu salud y alimentacion*/
+                .menu__health--content--ulli--text{
+                    position: absolute;
+                    color: #ffffff;
+                    top: 40%;
+                    left: -40%;
+                    font-weight: bold;
+                    font-size: .6em;
+                    text-align: left;
                 }
-                .health__actividades--text{
-                    margin-left: -85%;
-                }
+                    /* Margenes independiente, clase para el texto */
+                    .health__alimentacion--text{
+                        margin-left: -100%;
+                    }
+                    .health__actividades--text{
+                        margin-left: -85%;
+                    }
 
 
 /* 
@@ -280,15 +280,3 @@
                 }
 /* end - circulos de cada Item del menu */
 
-/* 
-    *
-    * La clase ui-dialog-titlebar es nativa de JQuery-UI
-    * donde se muestra la barra de titulo donde sale el 
-    * boton para cerrar.
-    *
-    * Se oculta para que no se muestre la X y cerrar la ventana haciendo clicken cualquier parte de la misma
-    *
-*/
-.ui-dialog-titlebar{
-  display: none;
-}
