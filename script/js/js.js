@@ -3,8 +3,8 @@
  * La clase .content-js se usa para ocultar todos los div
  * La clase .centro--img pertenece a la img principal cuando se abre la pagina	
  * @param {[object]} object [objeto de la elemento que llama a la funcion]
- */	
-function FadeInMsg(object) {
+ */
+function fadeInMsg(object) {
 	jQuery(".content-js").hide();
 	jQuery(".centro--img").addClass("hidden");
 	jQuery("p", object).fadeIn(1000);// jQuery(object).find("p").fadeIn(1000);
@@ -17,13 +17,13 @@ function FadeInMsg(object) {
  */
 function changeBackground(object){
 	console.log("entro a la funcion changeBackground");
-	var r = jQuery(object).attr("id");
+	var r = jQuery(object).attr("id");		
 	console.log(r);
 	if (r == "menu__1"){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu1.png)');
 	}
 	if (r == "menu__2"){
-		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu2.png)');
+		jQuery('.index').css('background', '<u></u>rl(../imagenes/backgroundMenu2.png)');
 	}
 	if (r == "menu__3"){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu3.png)');
@@ -51,7 +51,7 @@ jQuery(document).ready(function(){
 		$("#dialog1").click(function(){
 			$(this).dialog("close");
 		});
-	});
+	});	
 
 	//////////////////////////////////
 	//ventana modal de alimentacion //
@@ -264,7 +264,7 @@ jQuery(document).ready(function(){
 		jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
 		})
 	jQuery("#orientaciones__list--itemFamilia-js").mouseleave(function(){
-		jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
+	    jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
 	})
 });
 
