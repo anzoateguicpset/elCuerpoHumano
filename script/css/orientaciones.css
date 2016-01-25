@@ -6,8 +6,10 @@
 	text-align: justify;
 	line-height: 1.6em;
 	width: 950px;
-	border: 1px solid red;
 	margin-top: 10px;
 	left: 50%;
 	margin-left: -475px;
 }
+	.orientaciones__section > ul > li{
+		margin-top: 1em;
+	}

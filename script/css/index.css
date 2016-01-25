@@ -205,7 +205,7 @@
                 position: relative;
                 margin-top: 2em;
             }
-                /* texto circulos menu salud y alimentacion*/
+                /* texto dentro de los circulos menu salud y alimentacion*/
                 .menu__health--content--ulli--text{
                     position: absolute;
                     color: #ffffff;
@@ -247,7 +247,6 @@
         left: -520px;
         width: 1300px;
         height: 510px;
-        border: 1px solid red;
     }
         .menu__orientaciones--content--img{}
         /* lista para hacer los circulos */
@@ -255,6 +254,7 @@
             position: absolute;
             list-style: none;
             margin: 0;
+            padding: 0;
             bottom: 5px;
             width: 96.7%;
             text-align: center;
@@ -270,13 +270,21 @@
                 width: 30px;
                 height: 30px;
                 position: relative;
-                margin-right: 2em;
             }
+                .menu__orientaciones--content--ulli:nth-child(2){
+                    margin: 0 5em;
+                }
+                /* Texto dentro de los circulos menu orientaciones*/
                 .menu__orientaciones--content--ulli--text{
                     color: #ffffff;
                     position: absolute;
-                    top: 40%;
-                    left: -15px;
+                    top: 15%;
+                    left: -40px;
                     font-weight: bold;
                     font-size: .6em;
                 }
+                    .orientaciones__pedagogicas--text{
+                        margin-top: 10px;
+                        margin-left: 10px;
+
+                    }
