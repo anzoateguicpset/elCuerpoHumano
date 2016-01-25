@@ -10,6 +10,8 @@
 @import url(modalbox.css);
 @import url(orientaciones.css);
 @import url(parts_activities.css);
+@import url(health_activities.css);
+@import url(inside_activities.css);
 body {
     font-family: sans-serif;
     margin: 0;
