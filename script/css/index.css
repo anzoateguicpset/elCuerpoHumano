@@ -1,4 +1,6 @@
-/* stylesheet of index.html */
+/**
+ * stylesheet of index.html
+ */
 .index{
     background: url(../../imagenes/background.png) no-repeat;
 }
@@ -19,7 +21,7 @@
     circulos de cada Item del menu
     ===============================
 */
-/* menu 1 - Partes del cuerpo humano */
+/* MENU 1 - Partes del cuerpo humano */
 .menu__parts{
     background: #d99118;
 }
@@ -77,7 +79,7 @@
                 }
 
 /* 
-    menu 2 - Dentro del cuerpo humano
+    MENU 2 - Dentro del cuerpo humano
  */
 .menu__inside{
     background: #3e9283;
@@ -147,7 +149,7 @@
                     }
 
 /* 
-    menu 3 - Salud y alimentacion
+    MENU 3 - Salud y alimentacion
  */
 .menu__health{
     background: #dc696e;
@@ -278,5 +280,3 @@
                     font-weight: bold;
                     font-size: .6em;
                 }
-/* end - circulos de cada Item del menu */
-

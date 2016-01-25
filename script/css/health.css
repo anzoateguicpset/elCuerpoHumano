@@ -1,4 +1,6 @@
-/* styleshhet div salud y alimentacion */
+/**
+ * contenido del item de salud y alimentacion
+ */
 .healt__section{
 	position: absolute;
 	padding: 0;
@@ -21,11 +23,9 @@
 	position: absolute;
 	bottom: -80px;
 }
-
 .health__imgSabiasQ{
 	display: inline-block;
 }
-
 /* boton que activa la ventana modal */
 .health_boton{
 	width: 70px;
