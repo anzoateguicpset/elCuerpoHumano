@@ -6,7 +6,6 @@
 	color: #333;
 
 }
-
 #successMessage{
 	position: absolute;
 	left: 580px;
@@ -16,12 +15,12 @@
 	z-index: 100;
 	background: #dfd;
 	border: 2px solid #333;
+	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	padding: 20px;
 }
 
@@ -39,7 +38,7 @@ h1, h2, h3, h4{
 	-o-user-select: none;
 	user-select: none;
 }
-
+/*
 .wideBox{
 	clear: both;
 	text-align: center;
@@ -54,7 +53,7 @@ h1, h2, h3, h4{
 	margin: 20px;
 	color: #666;
 	font-size: 1.5em;
-}
+}*/
 
 #cardSlots{
 	margin: 50px auto 0 auto;
@@ -67,8 +66,8 @@ h1, h2, h3, h4{
 }
 
 #cardSlots, #cardPile{
-	width: 455px;
-	height: 120px;
+	width: 660px;
+	height: 190px;
 	padding: 20px;
 	border: 2px solid #333;
 	-moz-border-radius: 10px;
@@ -80,8 +79,8 @@ h1, h2, h3, h4{
 #cardSlots div, #cardPile div{
 
 	float: left;
-	width: 58px;
-	height: 78px;
+	width: 100px;
+	height: 150px;
 	padding: 10px;
 	padding-top: 40px;
 	padding-bottom: 0;
@@ -97,6 +96,7 @@ h1, h2, h3, h4{
   margin-left: 0;
 }
 
+/* hover de la imagenes cuando pasa por el slot */
 #cardSlots div.hovered {
   background: #aaa;
 }
@@ -105,6 +105,7 @@ h1, h2, h3, h4{
   border-style: dashed;
 }
 
+/* Color de fondo de pila de imagenes */
 #cardPile div {
   background: #666;
   color: #fff;
@@ -112,19 +113,15 @@ h1, h2, h3, h4{
   text-shadow: 0 0 3px #000;
 }
 
+/* Cuando la imagen esta siendo arrastrada */
 #cardPile div.ui-draggable-dragging {
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
 }
 
-#card1.correct { background: red; }
+/*#card1.correct { background: red; }
 #card2.correct { background: brown; }
 #card3.correct { background: orange; }
 #card4.correct { background: yellow; }
-#card5.correct { background: green; }
-#card6.correct { background: cyan; }
-#card7.correct { background: blue; }
-#card8.correct { background: indigo; }
-#card9.correct { background: purple; }
-#card10.correct { background: violet; }
+#card5.correct { background: green; }*/

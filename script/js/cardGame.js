@@ -3,25 +3,36 @@
 var correctCard = 0;
 $(init);
 
+/**
+ * Inicia la ejecucion del juego
+ */
 function init(){
 	$('#successMessage').hide();
 
 
-	// reset the game
+	////////////////////
+	// reset del juego //
+	////////////////////
 	correctCards = 0;
 	$('#cardPile').html('');
 	$('#cardSlots').html('');
 
 
-	// create the pile of shuffled cards
-	var numbers = [1, 2, 3, 4, 5];
-	numbers.sort(function(){
+	/////////////////////////////////
+	// creando la pila de imagenes //
+	/////////////////////////////////
+	var imagenes = ["<img src='../../imagenes/001.png'>",
+					"<img src='../../imagenes/002.png'>",
+					"<img src='../../imagenes/003.png'>",
+					"<img src='../../imagenes/004.png'>",
+					"<img src='../../imagenes/005.png'>"];
+	imagenes.sort(function(){
 		return Math.random() - .5
 	});
 
-
 	for (var i = 0; i < 5; i++) {
-		$('<div>' +numbers[i]+'</div>').data('number', numbers[i]).attr('id','card'+numbers[i]).appendTo('#cardPile').draggable({
+		var numerImg = imagenes[i].charAt(27);
+		$('<div>' +imagenes[i]+'</div>').data('number', numerImg).attr('id','card'+i).appendTo('#cardPile').draggable({
 			containment: '#content',
 			stack: '#cardPile div',
 			cursor: 'move',
@@ -29,11 +40,12 @@ function init(){
 		});
 	}
 
-
-	// create the card slots
-	var words = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
-	for (var i = 1; i <= 5  ; i++) {
-		$('<div>'+words[i-1]+'</div>').data('number', i).appendTo('#cardSlots').droppable({
+	/////////////////////////////////////////
+	// creando los slots para las imagenes //
+	/////////////////////////////////////////
+	var words = ['dic', 'birrete', 'libros', 'bolso', 'regla'];
+		for (var i = 0; i < 5  ; i++) {
+		$('<div>'+words[i]+'</div>').data('number', i+1).appendTo('#cardSlots').droppable({
 			accept: '#cardPile div',
 			hoverClass: 'hovered',
 			drop: handleCardDrop
@@ -47,15 +59,13 @@ function handleCardDrop(event, ui){
 	var slotNumber = $(this).data('number');
 	var cardNumber = ui.draggable.data('number');
 
-
-	/*
-
-	If the card was dropped to the correct slot,
-	change the card colour, position it directly
-	on top of the slot, and prevent it being dragged again
-
-	*/
-
+	console.log("numero de slot "+slotNumber);
+	console.log("numero de carta "+cardNumber);
+	/**
+	 * Si la imagen fue arrastrada al slot correcto
+	 * cambia el color de la imagen, y se posiciona directamente
+	 * arriba del slot previniendo que sea arrastrada otra vez
+	 */
 	if(slotNumber == cardNumber){
 		ui.draggable.addClass('correct');
 		ui.draggable.draggable('disable');
@@ -69,13 +79,10 @@ function handleCardDrop(event, ui){
 		correctCards++;
 	}
 
-	
-	/*
-
-	If all the cards have been placed correctly then display a message
-	 and reset the cards for another go
-
-	*/
+	/**
+	 * Si todas las imagenes han sido colocadas en el slot correcto
+	 * se muestra el mensaje y se resetean las cartas para otro juego
+	 */
 
 	if(correctCards == 5){
 		$('#successMessage').show();
