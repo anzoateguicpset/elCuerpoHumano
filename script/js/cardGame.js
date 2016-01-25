@@ -21,17 +21,17 @@ function init(){
 	/////////////////////////////////
 	// creando la pila de imagenes //
 	/////////////////////////////////
-	var imagenes = ["<img src='../../imagenes/001.png'>",
-					"<img src='../../imagenes/002.png'>",
-					"<img src='../../imagenes/003.png'>",
-					"<img src='../../imagenes/004.png'>",
-					"<img src='../../imagenes/005.png'>"];
+	var imagenes = ["<img src='../imagenes/001.png'>",
+					"<img src='../imagenes/002.png'>",
+					"<img src='../imagenes/003.png'>",
+					"<img src='../imagenes/004.png'>",
+					"<img src='../imagenes/005.png'>"];
 	imagenes.sort(function(){
 		return Math.random() - .5
 	});
 
 	for (var i = 0; i < 5; i++) {
-		var numerImg = imagenes[i].charAt(27);
+		var numerImg = imagenes[i].charAt(24);
 		$('<div>' +imagenes[i]+'</div>').data('number', numerImg).attr('id','card'+i).appendTo('#cardPile').draggable({
 			containment: '#content',
 			stack: '#cardPile div',

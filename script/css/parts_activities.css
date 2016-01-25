@@ -38,8 +38,8 @@ h1, h2, h3, h4{
 	-o-user-select: none;
 	user-select: none;
 }
-/*
-.wideBox{
+
+/*.wideBox{
 	clear: both;
 	text-align: center;
 	margin: 70px;
