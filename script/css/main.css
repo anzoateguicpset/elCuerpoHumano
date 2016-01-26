@@ -34,9 +34,19 @@ h2{
     user-select: none; 
 }
 /* Clase de prueba */
-.bor{
+.br{
     border: 1px solid red;
 }
+.bb{
+    border: 1px solid blue;
+}
+.by{
+    border: 1px solid yellow;
+}
+.bg{
+    border: 1px solid gray;
+}
+
 /**
  * La clase ui-dialog-titlebar es nativa de JQuery-UI donde se muestra la
  * barra de titulo donde sale el boton para cerrar.

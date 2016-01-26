@@ -5,12 +5,77 @@
 	<title>Actividades Dentro del Cuerpo Humano</title>
 	<script src="../script/js/jquery-2.1.4.js"></script>
 	<script src="../script/js/js.js"></script>
+	<script src="../script/js/ahorcadoGame.js"></script>
 	<link rel="stylesheet" href="../script/css/main.css">
 	<meta name="viewport" content="width=1366, user-scalable=no">
 </head>
 <body class="inside__activities">
+
+<div class="inside__activities--container">
+    <div class="ahorcado">
+        <div class="ahorcado__imagen">
+            <div class="ahorcado__imagen--container by">
+                <img src="../../imagenes/ahorcadoGame/a1.jpg" id="imagen" class="ahorcado__imagen--img">
+            </div>
+        </div>
+        <div class="ahorcado__frase br">
+            <pre><h3 id="secreto"></h3></pre>
+        </div>
+    </div>
+
+    <!-- columna derecha de las letras -->
+    <div class="letras" id="letras" >
+        <p>letras</p>
+    </div>
+    
+</div>
+<!--  -->
+
+<div class="container hidden">
+    <div class="row">
+
+    	<!-- donde aparece la imagen y las letras -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div class="box-icon">
+                    <span class="bor fa fa-4x fa-html5"><h3 id="tiempo"></h3></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center"><img src="../../imagenes/ahorcadoGame/a1.jpg" id="imagen"></h4>
+                    <p id="pregunta"></p>
+                    
+                    <br>
+                    <div>
+                        <pre><h3 id="secreto"></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+            <div class="box">
+                <div class="box-icon">
+                    <span class="fa fa-4x fa-css3"></span>
+                </div>
+                 
+                <!-- todo el contenedor de la letras -->
+                <div class="info">
+                    <h4 class="text-center">LETRAS</h4>
+                    <div id="letras"></div>
+                </div>
+            </div>
+        </div>
+		
+	</div>
+</div>
+
+
+<!--  -->
+
+
 	<footer>
-		<ul class="inside__ListBottom listBottom">
+		<ul class="inside__ListBottom listBottom hidden">
 			<a href="../presentacion/index.html">
 				<li class="inside__ListBottom--item listBottomItem">Atras</li>
 			</a>
