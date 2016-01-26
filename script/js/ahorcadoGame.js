@@ -60,7 +60,7 @@ $('.btn-default').click(function(event) {
     if(!ban){
         errores++;
         $('#imagen').attr('src', 'img/a'+errores+'.jpg');
-        $('#imagen').attr('src', '../../imagenes/ahorcadoGame/a'+errores+'.jpg');
+        $('#imagen').attr('src', '../imagenes/ahorcadoGame/a'+errores+'.jpg');
         if(errores == 5){
             alert('Vuelve a intentarlo. La frase era: '+frases[azar]);
             location.href="inside_activities.html";
