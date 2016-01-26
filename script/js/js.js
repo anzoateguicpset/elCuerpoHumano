@@ -2,7 +2,7 @@
  * [FadeInMsg] Oculta los divs no activos y muestra el del slide activo
  * La clase .content-js se usa para ocultar todos los div
  * La clase .centro--img pertenece a la img principal cuando se abre la pagina	
- * @param {[object]} object [objeto de la elemento que llama a la funcion]
+ * @param {[object]} object [objeto del elemento que llama a la funcion]
  */
 function fadeInMsg(object) {
 	jQuery(".content-js").hide();

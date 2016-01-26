@@ -18,9 +18,9 @@ function init(){
 	$('#cardSlots').html('');
 
 
-	/////////////////////////////////
-	// creando la pila de imagenes //
-	/////////////////////////////////
+	/////////////////////////
+	// Arreglo de imagenes //
+	/////////////////////////
 	var imagenes = ["<img src='../imagenes/001.png'>",
 					"<img src='../imagenes/002.png'>",
 					"<img src='../imagenes/003.png'>",
@@ -40,9 +40,9 @@ function init(){
 		});
 	}
 
-	/////////////////////////////////////////
-	// creando los slots para las imagenes //
-	/////////////////////////////////////////
+	/////////////////////////////
+	// Slots para las imagenes //
+	/////////////////////////////
 	var words = ['dic', 'birrete', 'libros', 'bolso', 'regla'];
 		for (var i = 0; i < 5  ; i++) {
 		$('<div>'+words[i]+'</div>').data('number', i+1).appendTo('#cardSlots').droppable({
@@ -54,6 +54,13 @@ function init(){
 
 }
 
+/**
+ * [Si la imagen fue arrastrada al slot correcto,
+ * cambia el color de la imagen, y se posiciona directamente
+ * arriba del slot previniendo que sea arrastrada otra vez]
+ * @param  {[Objeto]} event [Evento de la pagina]
+ * @param  {[Objeto]} ui    [description]
+ */
 function handleCardDrop(event, ui){
 
 	var slotNumber = $(this).data('number');
@@ -61,11 +68,7 @@ function handleCardDrop(event, ui){
 
 	console.log("numero de slot "+slotNumber);
 	console.log("numero de carta "+cardNumber);
-	/**
-	 * Si la imagen fue arrastrada al slot correcto
-	 * cambia el color de la imagen, y se posiciona directamente
-	 * arriba del slot previniendo que sea arrastrada otra vez
-	 */
+
 	if(slotNumber == cardNumber){
 		ui.draggable.addClass('correct');
 		ui.draggable.draggable('disable');
