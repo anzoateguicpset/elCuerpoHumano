@@ -228,7 +228,7 @@
     * MENU 4 - Orientaciones
  */
 .menu__orientaciones{
-    background: gray;
+    background: #8ab128;
 }
     /* texto dentro del circulo orientaciones */
     .menu__orientaciones--text{
@@ -262,7 +262,7 @@
             /* circulos dentro del menu orientaciones*/
             .menu__orientaciones--content--ulli{
                 display: inline-block;
-                background: #006857;
+                background: #5e8300;
                 border-radius: 50%;
                 font-size: 2em;
                 padding: 1em;

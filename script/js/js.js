@@ -29,7 +29,7 @@ function changeBackground(object){
 		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu3.png)');
 	}
 	if (r == "menu__4"){
-		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu2.png)');
+		jQuery('.index').css('background', 'url(../imagenes/backgroundMenu4.png)');
 	}
 }
 
