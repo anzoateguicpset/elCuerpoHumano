@@ -21,11 +21,13 @@ function init(){
 	/////////////////////////
 	// Arreglo de imagenes //
 	/////////////////////////
-	var imagenes = ["<img src='../imagenes/001.png'>",
-					"<img src='../imagenes/002.png'>",
-					"<img src='../imagenes/003.png'>",
-					"<img src='../imagenes/004.png'>",
-					"<img src='../imagenes/005.png'>"];
+	var imagenes = [
+		"<img src='../imagenes/001.png'>",
+		"<img src='../imagenes/002.png'>",
+		"<img src='../imagenes/003.png'>",
+		"<img src='../imagenes/004.png'>",
+		"<img src='../imagenes/005.png'>"
+	];
 	imagenes.sort(function(){
 		return Math.random() - .5
 	});

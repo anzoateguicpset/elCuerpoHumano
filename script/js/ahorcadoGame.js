@@ -2,12 +2,16 @@ $(document).ready(function() {
     var respuesta = new Array();
     var errores = 1;
 
-    //Creamos los botones con las letras dinamicamente usando codigo ASCII
+    ////////////////////////////////////////////////
+    // botones creados dinamicamente usando ASCII //
+    ////////////////////////////////////////////////
     for (var i = 65; i < 91; i++) {
         $('#letras').append('<button class="btn  btn-default" id="letra'+String.fromCharCode(i)+'">'+String.fromCharCode(i)+'</button>');
     };
 
-    //Declaramos nuestras frases que hay que descubrir
+    ///////////////////////
+    // arreglo de frases //
+    ///////////////////////
     frases = {
         0:"No pienses en las consecuencias y vive el momento",
         1:"Vuela alto pero procura amarrar bien tus alas",
@@ -27,12 +31,16 @@ $(document).ready(function() {
         15:"Nadie compra una vaca teniendo la leche gratis"
     };
 
-    //Convertimos todo a mayusculas
+    ///////////////////////
+    // Todo a mayusculas //
+    ///////////////////////
     for (var i = 0; i < 16; i++) {
       frases[i] = frases[i].toUpperCase();
     };
 
-  //Generamos un numero al azar para elegir una frase
+  //////////////////////////////////////////
+  // numero al azar para elegir una frase //
+  //////////////////////////////////////////
   var azar = Math.floor((Math.random() * 15) + 1);
   for (var i = 0; i < frases[azar].length; i++) {
     if(frases[azar].charAt(i) != ' ')respuesta[i] = '_ ';
@@ -40,13 +48,15 @@ $(document).ready(function() {
         $('#secreto').append(respuesta[i]);
   };
 
-//Cada vez que cliquen una letra entra qui
+/////////////////////////////////////////////////
+// Cuando se hace click a una letra entra aqui //
+/////////////////////////////////////////////////
 $('.btn-default').click(function(event) {
-    //Sacamos la tecla que se pulso
+    // Sacamos la tecla que se pulso
     var id= this.id.charAt(5);
     var ban = false;
     $('#secreto').empty();
-    //Comparamos si la letra que se eligio esta en la frase y se va agregado
+    // Comparamos si la letra que se eligio esta en la frase y se va agregado
     for (var i = 0; i < frases[azar].length; i++) {
         if(frases[azar].charAt(i) == id){
             respuesta[i] = id;
@@ -55,8 +65,8 @@ $('.btn-default').click(function(event) {
         $('#secreto').append(respuesta[i]);
     };
 
-    //Si la letra no esta en la frase...aumentamos los errores y cambiamos la imagen
-    //Si llegas a 5 errores el juego termina
+    // Si la letra no esta en la frase se aumentan los errores y se cambia la imagen
+    // Al alcanzar los cinco errores el juego termina
     if(!ban){
         errores++;
         $('#imagen').attr('src', 'img/a'+errores+'.jpg');
@@ -66,7 +76,8 @@ $('.btn-default').click(function(event) {
             location.href="inside_activities.html";
         }
     }
-    //Si la letra si esta en la frase entonces checamos si completaste la frase 
+    
+    // Si la letra esta en la frase se verifica si se completo la frase
     else{
         var ban2 = true;
         for (var i = 0; i < respuesta.length; i++) {
@@ -81,7 +92,7 @@ $('.btn-default').click(function(event) {
 
         }
     }
-    //Desactivamos la letra que ya se pulso
+    // Se desactiva la letra que ya se pulso
     $(this).removeClass('btn-default');
     $(this).attr('disabled','disabled');
 });
