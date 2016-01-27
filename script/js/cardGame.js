@@ -22,18 +22,18 @@ function init(){
 	// Arreglo de imagenes //
 	/////////////////////////
 	var imagenes = [
-		"<img src='../imagenes/001.png'>",
-		"<img src='../imagenes/002.png'>",
-		"<img src='../imagenes/003.png'>",
-		"<img src='../imagenes/004.png'>",
-		"<img src='../imagenes/005.png'>"
+		"<img src='../imagenes/cardGame/001.png'>",
+		"<img src='../imagenes/cardGame/002.png'>",
+		"<img src='../imagenes/cardGame/003.png'>",
+		"<img src='../imagenes/cardGame/004.png'>",
+		"<img src='../imagenes/cardGame/005.png'>"
 	];
 	imagenes.sort(function(){
 		return Math.random() - .5
 	});
 
 	for (var i = 0; i < 5; i++) {
-		var numerImg = imagenes[i].charAt(24);
+		var numerImg = imagenes[i].charAt(33);
 		$('<div>' +imagenes[i]+'</div>').data('number', numerImg).attr('id','card'+i).appendTo('#cardPile').draggable({
 			containment: '#content',
 			stack: '#cardPile div',
@@ -45,7 +45,7 @@ function init(){
 	/////////////////////////////
 	// Slots para las imagenes //
 	/////////////////////////////
-	var words = ['dic', 'birrete', 'libros', 'bolso', 'regla'];
+	var words = ['Brazo', 'Cabeza', 'Pie', 'Pierna', 'Tronco'];
 		for (var i = 0; i < 5  ; i++) {
 		$('<div>'+words[i]+'</div>').data('number', i+1).appendTo('#cardSlots').droppable({
 			accept: '#cardPile div',

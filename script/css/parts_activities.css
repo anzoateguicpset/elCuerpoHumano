@@ -39,25 +39,9 @@ h1, h2, h3, h4{
 	user-select: none;
 }
 
-/*.wideBox{
-	clear: both;
-	text-align: center;
-	margin: 70px;
-	padding: 10px;
-	background: #ebedf2;
-	border: 1px solid #333;
-}
-
-.wideBox h1{
-	font-weight: bold;
-	margin: 20px;
-	color: #666;
-	font-size: 1.5em;
-}*/
-
 #cardSlots{
 	margin: 50px auto 0 auto;
-	background: #ddf;
+	background: #ababab;
 }
 
 #cardPile{
@@ -74,10 +58,10 @@ h1, h2, h3, h4{
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	box-shadow: 0 0 .3em rgba( 0, 0, 0, .8);
+
 }
 
 #cardSlots div, #cardPile div{
-
 	float: left;
 	width: 100px;
 	height: 150px;
@@ -102,15 +86,12 @@ h1, h2, h3, h4{
 }
 
 #cardSlots div {
-  border-style: dashed;
+	border-style: dashed;
 }
 
 /* Color de fondo de pila de imagenes */
 #cardPile div {
-  background: #666;
-  color: #fff;
-  font-size: 50px;
-  text-shadow: 0 0 3px #000;
+	background: #d99217;
 }
 
 /* Cuando la imagen esta siendo arrastrada */
