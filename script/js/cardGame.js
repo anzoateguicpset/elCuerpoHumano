@@ -28,10 +28,12 @@ function init(){
 		"<img src='../imagenes/cardGame/004.png'>",
 		"<img src='../imagenes/cardGame/005.png'>"
 	];
+	// desordenando las imagenes
 	imagenes.sort(function(){
 		return Math.random() - .5
 	});
 
+	// Haciendo draggable cada imagen
 	for (var i = 0; i < 5; i++) {
 		var numerImg = imagenes[i].charAt(33);
 		$('<div>' +imagenes[i]+'</div>').data('number', numerImg).attr('id','card'+i).appendTo('#cardPile').draggable({
@@ -88,7 +90,6 @@ function handleCardDrop(event, ui){
 	 * Si todas las imagenes han sido colocadas en el slot correcto
 	 * se muestra el mensaje y se resetean las cartas para otro juego
 	 */
-
 	if(correctCards == 5){
 		$('#successMessage').show();
 		$('#successMessage').animate({

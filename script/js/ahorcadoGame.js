@@ -12,25 +12,6 @@ $(document).ready(function() {
     ///////////////////////
     // arreglo de frases //
     ///////////////////////
-    // frases = {
-    //     0:"No pienses en las consecuencias y vive el momento",
-    //     1:"Vuela alto pero procura amarrar bien tus alas",
-    //     2:"La verdadera vida tiene lugar en nuestro interior",
-    //     3:"Una palabra suave puede golpear con fuerza",
-    //     4:"No hay rosa sin espinas",
-    //     5:"El optimismo perpetuo multiplica las fuerzas",
-    //     6:"No tengas miedo a la verdad",
-    //     7:"Quien tiene la voluntad tiene la fuerza",
-    //     8:"Si vives en mi corazon",
-    //     9:"El que conoce el arte de vivir consigo mismo ignora el aburrimiento",
-    //     10:"La mayoria nunca tiene razon",
-    //     11:"La originalidad es la vuelta a los origenes",
-    //     12:"Quiero llorar porque me da la gana",
-    //     13:"Las ideas no se matan",
-    //     14:"Donde hay satisfaccion no hay revoluciones",
-    //     15:"Nadie compra una vaca teniendo la leche gratis"
-    // };
-
     frases = {
         0:"los musculos permiten correr reir agarrar y saltar",
         1:"las proteinas de origen animal es la mejor para los musculos",
