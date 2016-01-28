@@ -48,7 +48,7 @@ function ResetGame() {
 	$(Source + " div img").hide();
 	$(Source + " div").css("visibility", "visible");
 	Counter = 0;
-	$("#success").remove();
+	$("#health__success-js").hide();
 	$("#counter").html("" + Counter);
 	BoxOpened = "";
 	ImgOpened = "";
@@ -95,6 +95,7 @@ function OpenCard() {
 
 		if (ImgFound == ImgSource.length) {
 			$("#counter").prepend('<span id="success">Encontraste todas las imagenes con </span>');
+			$('#health__success-js').fadeIn("fast");
 		}
 	}
 }
