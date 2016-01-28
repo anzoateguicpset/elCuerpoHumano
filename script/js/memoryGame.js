@@ -6,16 +6,16 @@ var ImgFound = 0;
 var Source = "#boxcard";
 
 var ImgSource = [
-	"../imagenes/memoryGame/001.png",
-	"../imagenes/memoryGame/002.png",
-	"../imagenes/memoryGame/003.png",
-	"../imagenes/memoryGame/004.png",
-	"../imagenes/memoryGame/005.png",
-	"../imagenes/memoryGame/006.png",
-	"../imagenes/memoryGame/007.png",
-	"../imagenes/memoryGame/008.png",
-	"../imagenes/memoryGame/009.png",
-	"../imagenes/memoryGame/010.png"
+	"../imagenes/memory-game/001.png",
+	"../imagenes/memory-game/002.png",
+	"../imagenes/memory-game/003.png",
+	"../imagenes/memory-game/004.png",
+	"../imagenes/memory-game/005.png",
+	"../imagenes/memory-game/006.png",
+	"../imagenes/memory-game/007.png",
+	"../imagenes/memory-game/008.png",
+	"../imagenes/memory-game/009.png",
+	"../imagenes/memory-game/010.png"
 ];
 
 function RandomFunction(MaxValue, MinValue) {

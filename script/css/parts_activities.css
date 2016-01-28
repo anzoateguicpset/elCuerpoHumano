@@ -124,7 +124,7 @@ h1, h2, h3, h4{
 
 .parts__activities .backButton{
     position: absolute;
-    bottom: 50px;
+    bottom: 15px;
     left: 50%;
     margin-left: -92px;
     text-decoration: none;

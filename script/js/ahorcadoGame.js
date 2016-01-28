@@ -1,6 +1,6 @@
 function resetAhorcado(){
     // $("#inside__success-js").hide();
-    location.href="inside_activities.html";
+    location.href="inside-activities.html";
 
 }
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
     };
 
     ///////////////////////
-    // arreglo de frases //
+    // Objeto de frases //
     ///////////////////////
     frases = {
         0:"los musculos permiten correr reir agarrar y saltar",
@@ -73,10 +73,10 @@ $('.btn-default').click(function(event) {
     if(!ban){
         errores++;
         $('#imagen').attr('src', 'img/a'+errores+'.jpg');
-        $('#imagen').attr('src', '../imagenes/ahorcadoGame/a'+errores+'.jpg');
+        $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.jpg');
         if(errores == 5){
             alert('Vuelve a intentarlo. La frase era: '+frases[azar]);
-            location.href="inside_activities.html";
+            location.href="inside-activities.html";
         }
     }
     
