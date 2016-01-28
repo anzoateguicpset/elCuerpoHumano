@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividades Salud y alimentacion del Cuerpo Humano</title>
+	<script src="../script/js/jquery-2.1.4.js"></script>
+	<script src="../script/js/js.js"></script>
+	<script src="../script/js/memoryGame.js"></script>
+	<link rel="stylesheet" href="../script/css/main.css">
+	<meta name="viewport" content="width=1366, user-scalable=no">
+</head>
+<body class="health__activities">
+
+	<!-- Caja de botones superiores -->
+	<div id="picbox">
+	  <span id="boxbuttons">
+	    <span class="button">
+		    <span id="counter">0 </span>Clicks
+	    </span>
+	
+	    <span class="button">
+	      <a onclick="ResetGame();">Reiniciar Juego</a>
+	    </span> 
+	  </span>
+	
+	  <!-- mensaje final -->
+	  <div id="health__success-js" class="health__success hidden">
+		<h2>¡¡¡Muy bien!!!</h2>
+		<h4>Para mantener una buena salud, es necesario tener una alimentación saludable y normas de higiene</h4>
+		<button onclick="ResetGame()">Jugar otra vez</button>
+	  </div>
+	</div>
+
+	<!-- Caja de imagenes -->
+	<div id="boxcard"></div>
+
+	<footer>
+		<a href="../presentacion/index.html" class="backButton">Menu Principal</a>
+	</footer>
+</body>
+</html>
