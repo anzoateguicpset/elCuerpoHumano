@@ -93,11 +93,8 @@ function handleCardDrop(event, ui){
 	if(correctCards == 5){
 		$('#successMessage').show();
 		$('#successMessage').animate({
-			left: '380px',
 			top: '200px',
-			width: '400px',
-			height: '100px',
 			opacity: 1
-		});
+		}, 500);
 	}
 }

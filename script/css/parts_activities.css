@@ -8,12 +8,13 @@
 }
 #successMessage{
 	position: absolute;
-	left: 580px;
-	top: 250px;
-	width: 0;
-	height: 0;
+	width: 400px;
+	height: 150px;
+	top: 0;
+	left: 50%;
+	margin-left: -200px;
 	z-index: 100;
-	background: #dfd;
+	background: #f1d49b;
 	border: 2px solid #333;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -21,8 +22,22 @@
 	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-	padding: 20px;
+	padding: 25px;
+	line-height: 1.2em;
+	text-align: center;
 }
+	#successMessage button{
+		position: absolute;
+		left: 50%;
+		bottom: 10px;
+		margin-left: -90px;
+		background: #bc7700;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 5px 10px;
+		border-radius: 10px;
+	}
 
 
 h1, h2, h3, h4{
@@ -46,7 +61,7 @@ h1, h2, h3, h4{
 
 #cardPile{
 	margin: 0 auto;
-	background: #ffd;
+	background: #ababab;
 }
 
 #cardSlots, #cardPile{
