@@ -19,24 +19,29 @@ function init(){
 
 
 	/////////////////////////
-	// Arreglo de imagenes //
+	// objeto de imagenes //
 	/////////////////////////
-	var imagenes = [
-		"<img src='../imagenes/card-game/001.png'>",
-		"<img src='../imagenes/card-game/002.png'>",
-		"<img src='../imagenes/card-game/003.png'>",
-		"<img src='../imagenes/card-game/004.png'>",
-		"<img src='../imagenes/card-game/005.png'>"
-	];
-	// desordenando las imagenes
-	imagenes.sort(function(){
-		return Math.random() - .5
-	});
+
+	var imagenes = {
+		1:"<img src='../imagenes/card-game/brazo.png'>",
+		2:"<img src='../imagenes/card-game/cabeza.png'>",
+		3:"<img src='../imagenes/card-game/pie.png'>",
+		4:"<img src='../imagenes/card-game/pierna.png'>",
+		5:"<img src='../imagenes/card-game/tronco.png'>"
+	};
+
+
+	// // desordenando el arreglo de las imagenes
+	// imagenes.sort(function(){
+	// 	return Math.random() - .5
+	// });
+
+	console.log(imagenes);
+
 
 	// Haciendo draggable cada imagen
-	for (var i = 0; i < 5; i++) {
-		var numerImg = imagenes[i].charAt(34);
-		$('<div>' +imagenes[i]+'</div>').data('number', numerImg).attr('id','card'+i).appendTo('#cardPile').draggable({
+	for (var i = 5; i > 0; i--) {
+		$('<div>' +imagenes[i]+'</div>').data('number', i).attr('id','card'+i).appendTo('#cardPile').draggable({
 			containment: '#content',
 			stack: '#cardPile div',
 			cursor: 'move',
