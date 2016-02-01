@@ -1,0 +1,140 @@
+.parts__activities{
+	background: url(../../imagenes/background-parts.png) no-repeat;
+	margin: 30px;
+	font-family: "Georgia", serif;
+	line-height: 1.8em;
+	color: #333;
+
+}
+#successMessage{
+	position: absolute;
+	width: 400px;
+	height: 150px;
+	top: 0;
+	left: 50%;
+	margin-left: -200px;
+	z-index: 100;
+	background: #f1d49b;
+	border: 2px solid #333;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	-webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 25px;
+	line-height: 1.2em;
+	text-align: center;
+}
+	#successMessage button{
+		position: absolute;
+		left: 50%;
+		bottom: 10px;
+		margin-left: -90px;
+		background: #bc7700;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 5px 10px;
+		border-radius: 10px;
+	}
+
+
+h1, h2, h3, h4{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#content{
+	margin: 80px 70px;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#cardSlots{
+	margin: 50px auto 0 auto;
+	background: #ababab;
+}
+
+#cardPile{
+	margin: 0 auto;
+	background: #ababab;
+}
+
+#cardSlots, #cardPile{
+	width: 660px;
+	height: 190px;
+	padding: 20px;
+	border: 2px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 .3em rgba( 0, 0, 0, .8);
+
+}
+
+#cardSlots div, #cardPile div{
+	float: left;
+	width: 100px;
+	height: 150px;
+	padding: 10px;
+	padding-top: 40px;
+	padding-bottom: 0;
+	border: 2px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 0 0 10px;
+	background: #fff;
+}
+
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+
+/* hover de la imagenes cuando pasa por el slot */
+#cardSlots div.hovered {
+  background: #aaa;
+}
+
+#cardSlots div {
+	border-style: dashed;
+}
+
+/* Color de fondo de pila de imagenes */
+#cardPile div {
+	background: #d99217;
+}
+
+/* Cuando la imagen esta siendo arrastrada */
+#cardPile div.ui-draggable-dragging {
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/*#card1.correct { background: red; }
+#card2.correct { background: brown; }
+#card3.correct { background: orange; }
+#card4.correct { background: yellow; }
+#card5.correct { background: green; }*/
+
+.parts__activities .backButton{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -92px;
+    text-decoration: none;
+    background: #bc7700;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+    .parts__activities .backButton:hover{
+        background: rgba(188, 119, 0, .5);
+    }
