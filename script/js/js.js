@@ -33,6 +33,70 @@ function changeBackground(object){
 	}
 }
 
+/**
+ * Funcion para mostrar la pregunta generadora
+ * @param  {[objeto]} obj [objeto del elemento que llama a la funcion]
+ * @return {[type]}     [description]
+ */
+function question(object){
+	var l = $(object).attr("id");
+	console.log("el id es " + l);
+
+	if (l == "health-img-js")
+		{
+			$('#health-question-js').show().animate({
+				top: '70',
+				left: '350',
+				opacity: 1
+			}, 1000);
+		}
+	if (l == "inside-img-js")
+		{
+			$('#inside-question-js').show().animate({
+				bottom: '250',
+				right: '130',
+				opacity: 1
+			}, 1000);
+		}
+	if (l == "parts-img-js")
+		{
+			$('#parts-question-js').show().animate({
+				top: '60',
+				right: '250',
+				opacity: 1
+			}, 1000);
+		}
+
+}
+
+function cerrar(object){
+	var l = $(object).parent().attr("id");
+	console.log("el id al cerrar es " + l);
+
+	if (l == "health-question-js")
+		{
+			$(object).parent().hide().animate({
+				top: "-230px",
+				left: "0"
+			});
+		}
+	if (l == "inside-question-js")
+		{
+			$(object).parent().hide().animate({
+				bottom: "0",
+				right: "-200px"
+			});
+		}
+	if (l == "parts-question-js")
+		{
+			$(object).parent().hide().animate({
+				top: "-230px",
+				right: "-200px"
+			});
+		}
+
+}
+
 jQuery(document).ready(function(){
 	///////////////////////////
 	//ventana modal de salud //
@@ -122,6 +186,10 @@ jQuery(document).ready(function(){
 			$(this).dialog("close");
 		});
 	});
+
+	//////////////////////////////////////////////
+	// pregunta generadora salud y alimentacion //
+	//////////////////////////////////////////////
 
 	/////////////////////////////
 	//partes del cuerpo humano //

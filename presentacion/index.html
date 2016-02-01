@@ -41,9 +41,15 @@
 					</a>
 				</ul>
 
-				<figure class="menu__inside--content--img">
+				<!-- Imagen y pregunta generadora -->
+				<figure class="menu__inside--content--img" id="inside-img-js" onclick="question(this)">
 					<img src="../imagenes/logo-peq.png" alt="img div">
 				</figure>
+				<div id="inside-question-js" class="inside-question hidden">
+					<h2>¡¡¡Muy bien!!!</h2>
+					<h4>El cuerpo humano esta compuesto por la cabeza, el tronco y las extremidades</h4>
+					<button onclick="cerrar(this)">Hecho</button>
+				</div>
 
 				<!--  -->
 				<section>
@@ -94,6 +100,18 @@
 	            		<li class="menu__parts--content--ulli" id="parts__actividades-js" >&nbsp;<div class="menu__parts--content--ulli--text parts__actividades--text">ACTIVIDADES</div></li>
             		</a>
             	</ul>
+
+				<!-- Imagen y pregunta generadora -->
+            	<figure class="menu__parts--content--img" id="parts-img-js" onclick="question(this)" >
+            		<img src="../imagenes/logo-peq.png" alt="img menu">
+            	</figure>
+            	<div id="parts-question-js" class="parts-question hidden">
+            		<h2>¡¡¡Muy bien!!!</h2>
+            		<h4>El cuerpo humano esta compuesto por la cabeza, el tronco y las extremidades</h4>
+            		<button onclick="cerrar(this)">Hecho</button>
+            	</div>
+
+
 	            <!--  -->
 	            <section>
 	            	<!-- seccion principal, la que va a aparecer por defecto -->
@@ -144,9 +162,7 @@
 	            </section>
 	            <!--  -->
             
-            	<figure class="menu__parts--content--img">
-            		<img src="../imagenes/logo-peq.png" alt="img menu">
-            	</figure>
+
             </div><!--  End menu__parts--content -->
         </div><!-- End Menu 1 - Partes del Cuerpo Humano -->
 		<!--
@@ -167,10 +183,16 @@
 						<li class="menu__health--content--ulli" id="health__actividades-js">&nbsp;<div class="menu__health--content--ulli--text health__actividades--text">ACTIVIDADES</div></li>
 					</a>
 				</ul>
-
-				<figure class="menu__health--content--img">
+				
+				<!-- Imagen y pregunta generadora  -->
+				<figure class="menu__health--content--img" id="health-img-js" onclick="question(this)">
 					<img src="../imagenes/logo-peq.png" alt="img div">
 				</figure>
+				<div id="health-question-js" class="health-question hidden">
+					<h2>¡¡¡Muy bien!!!</h2>
+					<h4>El cuerpo humano esta compuesto por la cabeza, el tronco y las extremidades</h4>
+					<button onclick="cerrar(this)">Hecho</button>
+				</div>
 
 				<!--  -->
 				<section>
