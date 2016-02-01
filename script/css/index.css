@@ -49,6 +49,7 @@
             top: -280px;
             right: -250px;
         }
+            /* div y boton de la pregunta generadora de partes de cuerpo humano */
             .parts-question{
                 position: absolute;
                 z-index: 2;
@@ -64,12 +65,13 @@
                     left: 50%;
                     margin-left: -30px;
                     bottom: 10px;
-                    border: 1px solid red;
-                    background: #892a2e;
+                    background: #bc7700;
                     color: #ffffff;
                     font-weight: bold;
                     padding: 5px 10px;
                     border-radius: 10px;
+                    border: 0;
+
             }
         /* ul de los circulos dentro del menu */
         .menu__parts--content--ul{
@@ -130,6 +132,7 @@
             top: 255px;
             right: -335px;
         }
+            /* div y boton de la pregunta generadora de dentro de cuerpo humano */
             .inside-question{
                 position: absolute;
                 z-index: 2;
@@ -145,12 +148,13 @@
                     left: 50%;
                     margin-left: -30px;
                     bottom: 10px;
-                    border: 1px solid red;
-                    background: #892a2e;
+                    background: #006857;
                     color: #ffffff;
                     font-weight: bold;
                     padding: 5px 10px;
                     border-radius: 10px;
+                    border: 0;
+
                 }
            
         /* ul de los circulos dentro del menu */
@@ -229,6 +233,7 @@
             top: -280px;
             left: -70px;
         }
+            /* div y boton de la pregunta generadora de salud y alimentacion */
             .health-question{
                 position: absolute;
                 z-index: 2;
@@ -244,12 +249,12 @@
                     left: 50%;
                     margin-left: -30px;
                     bottom: 10px;
-                    border: 1px solid red;
                     background: #892a2e;
                     color: #ffffff;
                     font-weight: bold;
                     padding: 5px 10px;
                     border-radius: 10px;
+                    border: 0;
                 }
         /* lista para hacer los circulos dentro del menu */
         .menu__health--content--ul{
