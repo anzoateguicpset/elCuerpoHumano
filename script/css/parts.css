@@ -12,12 +12,13 @@
 }
 /* boton que activa la ventana modal */
 .parts_boton{
-	width: 70px;
-	height: 70px;
+	width: 80px;
+	height: 80px;
     background: #bc7700;
 	color: #ffffff;
 	border-radius: 50%;
 	border: 0;
+	font-weight: bold;
 }
 .parts_modalBox{
 	display: none;
@@ -38,5 +39,5 @@
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	bottom: -300px;
+	bottom: -310px;
 }
