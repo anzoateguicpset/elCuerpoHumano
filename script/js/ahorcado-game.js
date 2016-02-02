@@ -19,7 +19,6 @@ $(document).ready(function() {
     var respuesta = new Array();
     var errores = 1;
     $("#inside__success-js").hide();
-    $("#inside_activities_intrucciones-js").hide();
 
     llenaLetras();
 
@@ -95,7 +94,6 @@ $('.btn-default').click(function(event) {
         };
         if(ban2){
             $("#inside__success-js").fadeIn("fast");
-
         }
     }
     // Se desactiva la letra que ya se pulso
