@@ -194,7 +194,7 @@
                     }
                     /* clase para afectar al texto del circulo actividades*/
                     .inside__actividades--text{
-                        left: -25px;
+                        left: -12px;
                     }
 
 /* 
@@ -292,7 +292,7 @@
                         margin-left: -100%;
                     }
                     .health__actividades--text{
-                        margin-left: -85%;
+                        margin-left: -60%;
                     }
 
 
