@@ -38,6 +38,8 @@
 	display: none;
 	position: relative;
 	background: rgba(0,0,0,0.8);
+	line-height: 1.5em;
+	text-align: justify;
 }
 	/* ventana dentro de la ventana principal*/
 	.health_modalBox--msg{
