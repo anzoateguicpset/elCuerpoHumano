@@ -1,5 +1,7 @@
+/**
+ * Al terminar el juego, se va a la pagina principal de la actividad para comenzar otra vez
+ */
 function resetAhorcado(){
-    // $("#inside__success-js").hide();
     location.href="inside-activities.html";
 
 }
@@ -36,18 +38,15 @@ $(document).ready(function() {
       frases[i] = frases[i].toUpperCase();
     };
 
-  //////////////////////////////////////////
-  // numero al azar para elegir una frase //
-  //////////////////////////////////////////
-  var azar = Math.floor((Math.random() * 6));
-  console.log(azar);
-  console.log(frases[azar]);
-  // for (var i = 0; i <= 5; i++) {
-  //     console.log(Math.floor((Math.random() * 6)));
-  // };
-  for (var i = 0; i < frases[azar].length; i++) {
-    if(frases[azar].charAt(i) != ' ')respuesta[i] = '_ ';
-    else respuesta[i] = '\n'
+    //////////////////////////////////////////
+    // numero al azar para elegir una frase //
+    //////////////////////////////////////////
+    var azar = Math.floor((Math.random() * 6));
+    console.log(azar);
+    console.log(frases[azar]);
+    for (var i = 0; i < frases[azar].length; i++) {
+        if(frases[azar].charAt(i) != ' ') respuesta[i] = '_ ';
+        else respuesta[i] = '\n'
         $('#secreto-js').append(respuesta[i]);
   };
 

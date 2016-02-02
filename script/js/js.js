@@ -1,5 +1,5 @@
 /**
- * [FadeInMsg] Oculta los divs no activos y muestra el del slide activo
+ * Oculta los divs no activos y muestra el del slide activo
  * La clase .content-js se usa para ocultar todos los div
  * La clase .centro--img pertenece a la img principal cuando se abre la pagina	
  * @param {[object]} object [objeto del elemento que llama a la funcion]
@@ -12,7 +12,7 @@ function fadeInMsg(object) {
 }
 
 /**
- * [changeBackground] Cambia el fondo al pasar de un slide a otro
+ * Cambia el fondo al pasar de un slide a otro
  * @param  {[object]} object [objeto de la elemento que llama a la funcion]
  */
 function changeBackground(object){
@@ -34,11 +34,10 @@ function changeBackground(object){
 }
 
 /**
- * Funcion para mostrar la pregunta generadora
- * @param  {[objeto]} obj [objeto del elemento que llama a la funcion]
- * @return {[type]}     [description]
+ * Muestra la pregunta generadora tomando el id del elemento que llama a la funcion
+ * @param  {[object]} obj [objeto del elemento que llama a la funcion]
  */
-function question(object){
+function generateQuestion(object){
 	var l = $(object).attr("id");
 	console.log("el id es " + l);
 
@@ -69,6 +68,10 @@ function question(object){
 
 }
 
+/**
+ * Cierra la pregunta generadora, tomando el padre del elemento que hace la llamada como referencia
+ * @param  {[object]} object [objeto del elemento que llama a la funcion]
+ */
 function cerrar(object){
 	var l = $(object).parent().attr("id");
 	console.log("el id al cerrar es " + l);
