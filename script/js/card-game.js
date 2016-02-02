@@ -7,7 +7,7 @@ $(init);
  * Inicia la ejecucion del juego
  */
 function init(){
-	$('#successMessage').hide();
+	$('#parts__success-js').hide();
 
 
 	////////////////////
@@ -96,8 +96,8 @@ function handleCardDrop(event, ui){
 	 * se muestra el mensaje y se resetean las cartas para otro juego
 	 */
 	if(correctCards == 5){
-		$('#successMessage').show();
-		$('#successMessage').animate({
+		$('#parts__success-js').show();
+		$('#parts__success-js').animate({
 			top: '200px',
 			opacity: 1
 		}, 500);

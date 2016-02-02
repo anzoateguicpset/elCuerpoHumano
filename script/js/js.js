@@ -97,6 +97,9 @@ function cerrar(object){
 				right: "-200px"
 			});
 		}
+	else{
+		$(object).parent().hide();
+	}
 
 }
 

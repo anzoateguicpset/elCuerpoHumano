@@ -37,5 +37,18 @@
 	<footer>
 		<a href="../presentacion/index.html" class="backButton">Menú Principal</a>
 	</footer>
+	
+	<!-- Ventana y script que aparecen cuando ininia la pagina -->
+	<div id="health_activities_intrucciones-js" class="health_activities_intrucciones hidden">
+		<h2>Hola Mundo</h2>
+		<h4>Vamos a jugar</h4>
+		<button onclick="cerrar(this)">Hecho</button>
+	</div>
+
+	<script type="text/javaScript">
+		$(document).ready(function(){
+			$("#health_activities_intrucciones-js").delay(500).fadeIn("slow");
+		});
+	</script>
 </body>
 </html>

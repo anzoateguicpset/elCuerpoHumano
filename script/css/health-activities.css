@@ -78,14 +78,46 @@
 	margin-top: -75px;
 	left: 50%;
 	margin-left: -250px;
-	text-align: center;
-	padding: 20px;
+	z-index: 100;
 	background: #e78c8f;
 	border: 4px solid #892a2e;
 	border-radius: 10px;
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 25px;
+	line-height: 1.2em;
+	text-align: center;
 }
 	.health__success button{
 		margin-top: 60px;
+		background: #892a2e;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 5px 10px;
+		border-radius: 10px;
+		border: 0;
+	}
+
+.health_activities_intrucciones{
+	position: absolute;
+	text-align: center;
+	width: 450px;
+	height: 200px;
+	left: 50%;
+	margin-left: -250px;
+	top: 50%;
+	margin-top: -150px;
+	z-index: 100;
+	background: #e78c8f;
+	border: 4px solid #892a2e;
+	border-radius: 10px;
+	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+	padding: 25px;
+	line-height: 1.2em;
+	text-align: center;
+}
+	.health_activities_intrucciones button{
+		margin-top: 120px;
 		background: #892a2e;
 		color: #ffffff;
 		font-weight: bold;

@@ -17,15 +17,27 @@
 		<div id="cardPile"></div>
 	</div>
 
-	<div id="successMessage">
+	<div id="parts__success-js" class="parts__success hidden">
 		<h2>¡¡¡Muy bien!!!</h2>
 		<h4>El cuerpo humano esta compuesto por la cabeza, el tronco y las extremidades.</h4>
 		<button onclick="init()">Jugar otra vez</button>
 	</div>
 
-
 	<footer>
-		<a href="../presentacion/index.html" class="backButton">Menu Principal</a>
+		<a href="../presentacion/index.html" class="backButton">Menú Principal</a>
 	</footer>
+
+	<!-- Ventana y script que aparecen cuando ininia la pagina -->
+	<div id="parts_activities_intrucciones-js" class="parts_activities_intrucciones hidden">
+		<h2>Hola Mundo</h2>
+		<h4>Vamos a jugar</h4>
+		<button onclick="cerrar(this)">Hecho</button>
+	</div>
+
+	<script type="text/javaScript">
+		$(document).ready(function(){
+			$("#parts_activities_intrucciones-js").delay(500).fadeIn("slow");
+		});
+	</script>
 </body>
 </html>

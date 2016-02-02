@@ -3,20 +3,25 @@
  */
 function resetAhorcado(){
     location.href="inside-activities.html";
+}
 
+/**
+ * Llena un div con botones creados dinamicamente usando ASCII
+ */
+function llenaLetras(){
+    $('#letras-container-js').html("");
+    for (var i = 65; i < 91; i++) {
+        $('#letras-container-js').append('<button class="btn  btn-default" id="letra'+String.fromCharCode(i)+'">'+String.fromCharCode(i)+'</button>');
+    };
 }
 
 $(document).ready(function() {
     var respuesta = new Array();
     var errores = 1;
     $("#inside__success-js").hide();
+    $("#inside_activities_intrucciones-js").hide();
 
-    ////////////////////////////////////////////////
-    // botones creados dinamicamente usando ASCII //
-    ////////////////////////////////////////////////
-    for (var i = 65; i < 91; i++) {
-        $('#letras-container-js').append('<button class="btn  btn-default" id="letra'+String.fromCharCode(i)+'">'+String.fromCharCode(i)+'</button>');
-    };
+    llenaLetras();
 
     ///////////////////////
     // Objeto de frases //

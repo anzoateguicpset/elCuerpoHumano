@@ -149,3 +149,31 @@
         padding: 5px 10px;
         border-radius: 10px;
     }
+.inside_activities_intrucciones{
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -150px;
+    z-index: 100;
+    background: #73beb1;
+    border: 4px solid #000;
+    border-radius: 10px;
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 25px;
+    line-height: 1.2em;
+    text-align: center;
+}
+    .inside_activities_intrucciones button{
+        margin-top: 80px;
+        background: #006857;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 0;
+    }
