@@ -1,11 +1,14 @@
 .health__activities{
 	background: url(../../imagenes/background-health.png) no-repeat;
-	font: 18px Verdana;
+	font: 16px;
 	color: #FFF;
 }
 .health__activities * {
 	margin: 0;
 	padding: 0;
+}
+.health__activities h2{
+	margin-bottom: 1em;
 }
 
 /* Caja donde van los botones de click y de reset game */
@@ -117,7 +120,7 @@
 	text-align: center;
 }
 	.health_activities_intrucciones button{
-		margin-top: 120px;
+		margin-top: 100px;
 		background: #892a2e;
 		color: #ffffff;
 		font-weight: bold;

@@ -46,16 +46,15 @@
 	margin-top: -150px;
 	z-index: 100;
 	background: #f1d49b;
-	border: 2px solid #333;
+	border: 4px solid #333;
 	border-radius: 10px;
 	box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
 	padding: 25px;
 	line-height: 1.2em;
-	text-align: center;
 
 }
 	.parts_activities_intrucciones button{
-		margin-top: 80px;
+		margin-top: 65px;
 		background: #bc7700;
 		color: #ffffff;
 		font-weight: bold;
