@@ -1,15 +1,21 @@
+// Variables de inicio del juego
 var errores = 1;
 var respuesta = new Array();
 var numeroAzar = Math.floor((Math.random() * 6));
 $(init);
 
+/**
+ * funcion que inicia la ejecucion del juego
+ */
 function init(){
     llenaLetras();
     escribeEspacios();
     $('.btn-default').click(foo);
 };
 
-// Llena un div con botones creados dinamicamente usando ASCII
+/**
+ * Genera dinamicamente las letras de cada boton usando ASCII
+ */
 function llenaLetras(){
     $('#letras-container-js').html("");
     for (var i = 65; i < 91; i++) {
@@ -17,6 +23,9 @@ function llenaLetras(){
     };
 };
 
+/**
+ * Selecciona la frase del objeto mediante un numero al azar
+ */
 function escribeEspacios(){
     // Objeto de frases
     frases = {
@@ -45,6 +54,10 @@ function escribeEspacios(){
 };
 
 
+/**
+ * Cada vez que se presiona una letra entra a esta funcion
+ * @param  {object} event - objeto event
+*/
 function foo(event){
 
     // Sacamos la tecla que se pulso, desde el id de cada boton de la letra
@@ -92,14 +105,15 @@ function foo(event){
     $(this).attr('disabled','disabled');
 }
 
-
+/**
+ * Al ganar o perder entrar a esta funcion para iniciar los valores y comenzar la ejecucion del juego
+ */
 function resetAhorcado(){
+    // Para generar un nuevo numero al azar para escoger una nueva frase
     numeroAzar = Math.floor((Math.random() * 6));
-    console.log("el NUEVO numero azar es "+ numeroAzar);
     errores = 1;
     $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.jpg');
     init();
-
 };
 
 
