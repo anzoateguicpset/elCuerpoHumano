@@ -33,7 +33,7 @@ function escribeEspacios(){
         1:"las proteinas de origen animal son la mejores para los musculos",
         2:"los huesos se componen de calcio fosforo y colageno",
         3:"la estructura del cuerpo esta conformada por los huesos",
-        4:"hacer ejercicio favorece el aumento de la masa muscular y de la fortaleza osea",
+        4:"hacer ejercicio favorece el aumento de la masa muscular y fortalece los huesos",
         5:"el cuerpo humano de un adulto tiene doscientos seis huesos",
     };
 

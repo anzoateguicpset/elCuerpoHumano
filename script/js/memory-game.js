@@ -94,7 +94,7 @@ function OpenCard() {
 		$("#counter").html("" + Counter);
 
 		if (ImgFound == ImgSource.length) {
-			$("#counter").prepend('<span id="success">Encontraste todas las imagenes con </span>');
+			$("#counter").prepend('<span id="success">Encontraste todas las imágenes con </span>');
 			$('#health__success-js').fadeIn("fast");
 		}
 	}
