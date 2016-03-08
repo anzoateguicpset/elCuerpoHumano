@@ -80,7 +80,7 @@ function foo(event){
     // Al alcanzar los cinco errores el juego termina
     if(!ban){
         errores++;
-        $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.jpg');
+        $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.png');
         if(errores == 5){
             alert('Vuelve a intentarlo. La frase era: '+frases[numeroAzar]);
             resetAhorcado();
@@ -112,8 +112,6 @@ function resetAhorcado(){
     // Para generar un nuevo numero al azar para escoger una nueva frase
     numeroAzar = Math.floor((Math.random() * 6));
     errores = 1;
-    $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.jpg');
+    $('#imagen').attr('src', '../imagenes/ahorcado-game/a'+errores+'.png');
     init();
 };
-
-
