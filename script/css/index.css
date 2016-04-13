@@ -248,8 +248,8 @@
                 position: absolute;
                 z-index: 2;
                 width: 400px;
-                height: 200px;
-                top: -230px;
+                height: 280px;
+                top: -200px;
                 left: 0;
                 text-align: center;
                 background: #e78c8f;
@@ -259,6 +259,13 @@
                 padding: 25px;
                 line-height: 1.2em;
             }
+                .health-question p{
+                    border-top: 2px solid #892a2e;
+                    padding-top: 1em;
+                }
+                    .health-question > p > span{
+                        font-weight: 600;
+                    }
                 .health-question button{
                     position: absolute;
                     left: 50%;
