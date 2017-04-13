@@ -20,16 +20,16 @@ function changeBackground(object){
 	var r = jQuery(object).attr("id");		
 	console.log(r);
 	if (r == "menu__1"){
-		jQuery('.index').css('background', 'url(../imagenes/background-parts.png)');
+		jQuery('.index').css('background', 'url(imagenes/background-parts.png)');
 	}
 	if (r == "menu__2"){
-		jQuery('.index').css('background', 'url(../imagenes/background-inside.png)');
+		jQuery('.index').css('background', 'url(imagenes/background-inside.png)');
 	}
 	if (r == "menu__3"){
-		jQuery('.index').css('background', 'url(../imagenes/background-health.png)');
+		jQuery('.index').css('background', 'url(imagenes/background-health.png)');
 	}
 	if (r == "menu__4"){
-		jQuery('.index').css('background', 'url(../imagenes/background-orientation.png)');
+		jQuery('.index').css('background', 'url(imagenes/background-orientation.png)');
 	}
 }
 
@@ -341,6 +341,3 @@ jQuery(document).ready(function(){
 	    jQuery("#orientaciones__section--itemFamilia-js").fadeToggle("fast");
 	})
 });
-
-
-
